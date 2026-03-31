@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <title>Sreevarshini Srinivasan | Data Engineering × Deep Learning</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <meta name="description"
-    content="Portfolio of Sreevarshini Srinivasan — Senior Data Engineer building production lakehouse pipelines on Azure and Databricks. STEM OPT from May 2026." />
+    content="Portfolio of Sreevarshini Srinivasan — Senior Data Engineer building production lakehouse pipelines on Azure and Databricks." />
   <meta name="keywords"
     content="Sreevarshini Srinivasan, Data Engineer, ML Engineer, Data Engineering, Deep Learning, MLOps, Lakehouse, Databricks, Azure, AWS, Streaming, Data Governance, Observability" />
   <meta name="author" content="Sreevarshini Srinivasan" />
 
   <meta property="og:title" content="Sreevarshini Srinivasan | Senior Data Engineer" />
   <meta property="og:description"
-    content="Senior Data Engineer — Azure · Databricks · Delta Lake. Building production pipelines at scale. STEM OPT from May 2026." />
+    content="Senior Data Engineer — Azure · Databricks · Delta Lake. Building production pipelines at scale." />
   <meta property="og:type" content="website" />
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
-    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <!-- Skip link for accessibility -->
-  <a href="#about" class="skip-link">Skip to main content</a>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
   <!-- Header / Navigation -->
   <header class="site-header" id="top">
     <div class="container header-inner">
       <div class="logo" aria-label="Home">
         <span class="logo-mark">SS</span>
-        <span class="logo-text">Sreevarshini&nbsp;Srinivasan</span>
+        <span class="logo-text">Sreevarshini Srinivasan</span>
       </div>
 
       <nav class="nav" aria-label="Main navigation">
@@ -51,112 +50,103 @@
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#education" class="nav-link">Education</a></li>
+          <li>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+              <!-- SVG handled by script.js -->
+            </button>
+          </li>
         </ul>
-
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-          🌓
-        </button>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero" aria-labelledby="hero-heading">
-    <div class="hero-overlay"></div>
-    <div class="container hero-inner">
-      <div class="hero-content">
-        <h1 class="hero-name" id="hero-heading">Sreevarshini&nbsp;Srinivasan</h1>
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="container animate-on-scroll">
+        <div class="hero-content">
+          <h1 class="hero-name" id="hero-heading">Sreevarshini&nbsp;Srinivasan</h1>
+          <p class="hero-title">Senior Data Engineer &middot; Azure &middot; Databricks &middot; Delta Lake</p>
 
-        <!-- UPDATED TAGLINE -->
-        <p class="hero-title">Senior Data Engineer &middot; Azure &middot; Databricks &middot; Delta Lake &middot; STEM
-          OPT May 2026</p>
-
-        <!-- UPDATED HERO TAGLINE -->
-        <p class="hero-tagline">
-          I build production data pipelines that actually ship &mdash; 10TB lakehouse architectures, hourly batch
-          ingestion across 100+ tables, and a tax platform processing 6 years of financial data across 7 countries.
-        </p>
-
-        <div class="hero-cta" style="margin-top: 2rem;">
-          <a href="https://www.linkedin.com/in/sreevarshini-srinivasan-3510081b7" target="_blank" rel="noopener"
-            class="btn-primary"
-            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: var(--accent); color: var(--bg); border-radius: 6px; text-decoration: none; font-weight: 600; transition: transform 0.2s ease, box-shadow 0.2s ease;">
-            Open to work &middot; Reach me on LinkedIn
-          </a>
-        </div>
-
-        <div class="currently-building-card"
-          style="margin-top: 3rem; padding: 1.25rem 1.5rem; border: 1px solid var(--border); border-radius: 8px; background: rgba(255, 255, 255, 0.03); max-width: 650px; text-align: left; backdrop-filter: blur(10px);">
-          <p
-            style="font-size: 0.85rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; margin-top: 0;">
-            Currently Building</p>
-          <p style="margin: 0; font-size: 1rem; line-height: 1.6; color: var(--text);">
-            Exploring relational deep learning on enterprise tabular data — applying GNNs to predict directly on
-            relational schemas without feature engineering.
+          <p class="hero-tagline">
+            I build production data pipelines that actually ship &mdash; 10TB lakehouse architectures, hourly batch
+            ingestion across 100+ tables, and a tax platform processing 6 years of financial data across 7 countries.
           </p>
+
+          <div class="hero-cta">
+            <a href="https://www.linkedin.com/in/sreevarshini-srinivasan-3510081b7" target="_blank" rel="noopener" class="btn-primary">
+              Reach me on LinkedIn
+              <svg class="icon-sm" viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L18.99 6.41V10h2V3h-7z"/><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/></svg>
+            </a>
+          </div>
+
+          <div class="currently-building-card">
+            <h3>Currently Building</h3>
+            <p>A <strong>graph-native schema registry</strong> where:</p>
+            <ul>
+              <li>Every schema version is a node with column-level features (types, nullability, cardinality).</li>
+              <li>Every transformation between versions is a weighted directed edge (additive = low weight, breaking = high weight).</li>
+              <li>A GNN operates on this graph to predict breaking downstream consumers, safest migration paths, and drift trajectories.</li>
+              <li>SQL migrations are auto-generated by traversing the shortest path through the transformation graph.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <span>Scroll to explore</span>
+          <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
         </div>
       </div>
+    </section>
 
-      <div class="scroll-indicator">
-        <span class="scroll-text">Scroll to explore</span>
-        <span class="scroll-chevron">↓</span>
-      </div>
-    </div>
-  </section>
-
-  <main>
     <!-- About Section -->
-    <section id="about" class="section about">
-      <div class="container about-inner">
-        <div class="about-content">
+    <section id="about" class="section">
+      <div class="container animate-on-scroll">
+        <div class="section-header">
           <p class="section-label">ABOUT</p>
-          <!-- UPDATED SECTION TITLE -->
           <h2 class="section-title">Production Data Engineering at Scale</h2>
-
-          <!-- UPDATED ABOUT BODY — 3 paragraphs -->
+        </div>
+        <div class="about-content">
           <p class="section-body">
             I build production data pipelines that actually ship &mdash; 10TB lakehouse architectures, hourly batch
             ingestion across 100+ tables, and a tax calculation platform processing 6 years of financial data for a
             retail chain operating across 7 countries.
           </p>
-
           <p class="section-body">
             My stack is Azure-native: ADF, Databricks, Delta Live Tables, Unity Catalog, and Apache NiFi. I&rsquo;ve
             done the full lifecycle &mdash; ingestion from Oracle, MySQL, and XML sources, medallion architecture
             design, PySpark transformations, data quality automation, and governance via RBAC and audit logging.
           </p>
-
           <p class="section-body">
             I&rsquo;m finishing an M.S. in Data Science at the University of Maryland (May&nbsp;2026) and moving toward
             the intersection of data engineering and deep learning &mdash; specifically, applying graph neural networks
-            to relational enterprise data to replace manual feature engineering. Available on STEM OPT from
-            May&nbsp;2026.
+            to relational enterprise data to replace manual feature engineering.
           </p>
         </div>
       </div>
     </section>
 
     <!-- Focus / Pillars Section -->
-    <section id="pillars" class="section pillars">
-      <div class="container">
-        <p class="section-label">FOCUS</p>
-        <h2 class="section-title">What I Build</h2>
-        <p class="section-subtitle">Systems-first work across Data Engineering × Deep Learning.</p>
+    <section id="pillars" class="section">
+      <div class="container animate-on-scroll">
+        <div class="section-header">
+          <p class="section-label">FOCUS</p>
+          <h2 class="section-title">What I Build</h2>
+          <p class="section-subtitle">Systems-first work across Data Engineering × Deep Learning.</p>
+        </div>
 
-        <div class="about-best-grid">
+        <div class="feature-grid">
           <article class="feature-card">
             <h4 class="feature-title">Intelligent Data Pipelines</h4>
             <p class="feature-desc">
-              Incremental ingestion, schema evolution, and validation pipelines that stay reliable under real-world
-              change.
+              Incremental ingestion, schema evolution, and validation pipelines that stay reliable under real-world change.
             </p>
           </article>
 
           <article class="feature-card">
             <h4 class="feature-title">Model-Aware Infrastructure</h4>
             <p class="feature-desc">
-              Feature pipelines and time-series systems designed to preserve signal, handle missingness, and support
-              training/serving parity.
+              Feature pipelines and time-series systems designed to preserve signal, handle missingness, and support training/serving parity.
             </p>
           </article>
 
@@ -178,62 +168,40 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section experience">
-      <div class="container">
-        <p class="section-label">EXPERIENCE</p>
-        <h2 class="section-title">Where I've Worked</h2>
-        <p class="section-subtitle">Building data infrastructure across labs, startups, and enterprise clients.</p>
+    <section id="experience" class="section">
+      <div class="container animate-on-scroll">
+        <div class="section-header">
+          <p class="section-label">EXPERIENCE</p>
+          <h2 class="section-title">Where I've Worked</h2>
+          <p class="section-subtitle">Building data infrastructure across labs, startups, and enterprise clients.</p>
+        </div>
 
         <div class="timeline">
           <!-- Experience: Data Engineer -->
           <article class="timeline-item">
-            <div class="timeline-line"></div>
-            <div class="timeline-dot"></div>
-
             <div class="experience-card">
               <div class="experience-header">
-                <div>
+                <div class="experience-title-group">
                   <h3 class="experience-title">Data Engineer</h3>
-                  <p class="experience-company">@ Loyalytics AI</p>
-                  <p class="experience-meta">April 2023 – July 2024 · Remote</p>
+                  <span class="experience-company">@ Loyalytics AI</span>
                 </div>
+                <p class="experience-meta">April 2023 – July 2024 · Remote</p>
               </div>
 
               <p class="experience-context">
-                Built lakehouse-style data infrastructure for retail analytics at scale, with reliability and governance
-                as defaults.
+                Built lakehouse-style data infrastructure for retail analytics at scale, with reliability and governance as defaults.
               </p>
 
               <ul class="experience-list">
-                <li>
-                  Created pipelines in Databricks and set up the whole system with Delta Live Tables — managing
-                  <strong>10TB of historical data</strong> and batch pipelines updating hourly for <strong>10+ sources
-                    and 100+ tables</strong> through medallion architecture.
-                </li>
-                <li>
-                  Built an internal tax calculation platform on Azure for LuLu, a retail chain operating across 7
-                  countries — processing <strong>6 years of historical data</strong> plus ongoing batch ingestion, with
-                  <strong>100% accuracy</strong>.
-                </li>
-                <li>
-                  Ran Apache NiFi on a VM rather than managed cloud specifically to cut compute costs and keep sensitive
-                  financial data secure.
-                </li>
-                <li>
-                  Implemented complex sales and inventory transformation logic to power downstream analytics and
-                  reporting.
-                </li>
-                <li>
-                  Migrated ~6TB data from legacy databases (Oracle, MySQL) into Azure ecosystem and authored complex SQL
-                  and Python queries for robust data processing.
-                </li>
-                <li>
-                  Led migration to Unity Catalog, optimizing data management and governance for a massive retail chain
-                  in the Middle East.
-                </li>
+                <li>Created pipelines in Databricks and set up the whole system with Delta Live Tables — managing <strong>10TB of historical data</strong> and batch pipelines updating hourly for <strong>10+ sources and 100+ tables</strong> through medallion architecture.</li>
+                <li>Built an internal tax calculation platform on Azure for LuLu, a retail chain operating across 7 countries — processing <strong>6 years of historical data</strong> plus ongoing batch ingestion, with <strong>100% accuracy</strong>.</li>
+                <li>Ran Apache NiFi on a VM rather than managed cloud specifically to cut compute costs and keep sensitive financial data secure.</li>
+                <li>Implemented complex sales and inventory transformation logic to power downstream analytics and reporting.</li>
+                <li>Migrated ~6TB data from legacy databases (Oracle, MySQL) into Azure ecosystem and authored complex SQL and Python queries for robust data processing.</li>
+                <li>Led migration to Unity Catalog, optimizing data management and governance for a massive retail chain in the Middle East.</li>
               </ul>
 
-              <div class="experience-tech">
+              <div class="tech-tags">
                 <span class="tech-tag">Azure Data Factory</span>
                 <span class="tech-tag">Databricks</span>
                 <span class="tech-tag">Delta Live Tables</span>
@@ -250,16 +218,13 @@
 
           <!-- Experience: Data Engineer Intern -->
           <article class="timeline-item">
-            <div class="timeline-line"></div>
-            <div class="timeline-dot"></div>
-
             <div class="experience-card">
               <div class="experience-header">
-                <div>
+                <div class="experience-title-group">
                   <h3 class="experience-title">Data Engineer Intern</h3>
-                  <p class="experience-company">@ Loyalytics AI</p>
-                  <p class="experience-meta">January 2023 – March 2023 · Hybrid</p>
+                  <span class="experience-company">@ Loyalytics AI</span>
                 </div>
+                <p class="experience-meta">January 2023 – March 2023 · Hybrid</p>
               </div>
 
               <p class="experience-context">
@@ -267,18 +232,14 @@
               </p>
 
               <ul class="experience-list">
-                <li>Built ADF pipelines orchestrating ingestion from diverse sources (Oracle, MySQL, XMLs, CSVs) in
-                  Azure Storage.</li>
+                <li>Built ADF pipelines orchestrating ingestion from diverse sources (Oracle, MySQL, XMLs, CSVs) in Azure Storage.</li>
                 <li>Authored complex SQL and Python queries for efficient data processing and transformation.</li>
-                <li>Automated validation processes across large datasets, capturing issues early and ensuring integrity.
-                </li>
-                <li>Led foundational migration efforts to Unity Catalog to improve governance and data discoverability.
-                </li>
-                <li>Improved data flow efficiency by <strong>40%</strong> via incremental load strategies and tuning,
-                  contributing to streamlined operations.</li>
+                <li>Automated validation processes across large datasets, capturing issues early and ensuring integrity.</li>
+                <li>Led foundational migration efforts to Unity Catalog to improve governance and data discoverability.</li>
+                <li>Improved data flow efficiency by <strong>40%</strong> via incremental load strategies and tuning, contributing to streamlined operations.</li>
               </ul>
 
-              <div class="experience-tech">
+              <div class="tech-tags">
                 <span class="tech-tag">Azure Data Factory</span>
                 <span class="tech-tag">SQL</span>
                 <span class="tech-tag">Python</span>
@@ -293,37 +254,28 @@
 
           <!-- Experience: Cloud Infrastructure Engineer -->
           <article class="timeline-item">
-            <div class="timeline-line"></div>
-            <div class="timeline-dot"></div>
-
             <div class="experience-card">
               <div class="experience-header">
-                <div>
+                <div class="experience-title-group">
                   <h3 class="experience-title">Cloud Infrastructure Engineer (Founding Team)</h3>
-                  <p class="experience-company">@ DriverAI, LLC</p>
-                  <p class="experience-meta">June 2025 – August 2025 · Peoria, AZ</p>
+                  <span class="experience-company">@ DriverAI, LLC</span>
                 </div>
+                <p class="experience-meta">June 2025 – August 2025 · Peoria, AZ</p>
               </div>
 
               <p class="experience-context">
-                Built automation-first cloud infrastructure with monitoring, security best practices, and reproducible
-                deployments.
+                Built automation-first cloud infrastructure with monitoring, security best practices, and reproducible deployments.
               </p>
 
               <ul class="experience-list">
-                <li>Founding engineer responsible for setting up end-to-end ingestion for structured and unstructured
-                  data.</li>
-                <li>Deployed AWS (RDS, EC2) and Azure infrastructure ensuring high availability and scalable patterns.
-                </li>
-                <li>Automated resource provisioning with Terraform, enhancing operational efficiency and cutting manual
-                  overhead by <strong>60%</strong>.</li>
-                <li>Integrated monitoring via CloudWatch and Grafana to track system performance and resolve incidents
-                  early.</li>
-                <li>Collaborated on CI/CD pipelines and enforced cloud security best practices through IAM and secrets
-                  management.</li>
+                <li>Founding engineer responsible for setting up end-to-end ingestion for structured and unstructured data.</li>
+                <li>Deployed AWS (RDS, EC2) and Azure infrastructure ensuring high availability and scalable patterns.</li>
+                <li>Automated resource provisioning with Terraform, enhancing operational efficiency and cutting manual overhead by <strong>60%</strong>.</li>
+                <li>Integrated monitoring via CloudWatch and Grafana to track system performance and resolve incidents early.</li>
+                <li>Collaborated on CI/CD pipelines and enforced cloud security best practices through IAM and secrets management.</li>
               </ul>
 
-              <div class="experience-tech">
+              <div class="tech-tags">
                 <span class="tech-tag">AWS</span>
                 <span class="tech-tag">Azure</span>
                 <span class="tech-tag">Terraform</span>
@@ -338,16 +290,13 @@
 
           <!-- Experience: Lab Ambassador -->
           <article class="timeline-item">
-            <div class="timeline-line"></div>
-            <div class="timeline-dot"></div>
-
             <div class="experience-card">
               <div class="experience-header">
-                <div>
+                <div class="experience-title-group">
                   <h3 class="experience-title">Lab Ambassador</h3>
-                  <p class="experience-company">@ Tinkerspace UMD</p>
-                  <p class="experience-meta">Present · College Park, MD</p>
+                  <span class="experience-company">@ Tinkerspace UMD</span>
                 </div>
+                <p class="experience-meta">Present · College Park, MD</p>
               </div>
 
               <p class="experience-context">
@@ -361,7 +310,7 @@
                 <li>Help maintain shared standards for organization, tooling, and usage procedures.</li>
               </ul>
 
-              <div class="experience-tech">
+              <div class="tech-tags">
                 <span class="tech-tag">Robotics</span>
                 <span class="tech-tag">Technical Support</span>
                 <span class="tech-tag">Documentation</span>
@@ -369,187 +318,197 @@
               </div>
             </div>
           </article>
-
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section projects">
-      <div class="container">
-        <p class="section-label">PROJECTS</p>
-        <h2 class="section-title">Things I've Built</h2>
-        <p class="section-subtitle">Systems that connect real data to reliable ML outcomes.</p>
+    <section id="projects" class="section">
+      <div class="container animate-on-scroll">
+        <div class="section-header">
+          <p class="section-label">PROJECTS</p>
+          <h2 class="section-title">Things I've Built</h2>
+          <p class="section-subtitle">Systems that connect real data to reliable ML outcomes.</p>
+        </div>
 
-        <h3 class="projects-category-title"
-          style="margin-top: 1rem; margin-bottom: 2rem; font-size: 1.5rem; color: var(--text);">Data Engineering</h3>
+        <h3 class="projects-category-title">Data Engineering</h3>
         <div class="project-grid" style="margin-bottom: 3rem;">
           <!-- Project: Air Quality -->
           <article class="project-card">
-            <div class="project-content">
+            <div class="project-header">
               <h3 class="project-title">Real-Time Air Quality Data Pipeline & Dashboard</h3>
               <p class="project-description">Airflow · dbt · Snowflake · Data Quality · Monitoring</p>
-
-              <div class="project-features">
-                <h4>Highlights</h4>
-                <ul>
-                  <li>Built hourly ingestion from OpenAQ with Airflow orchestration and dbt transformations in
-                    Snowflake.</li>
-                  <li>Added governance controls: RBAC, audit logs, freshness SLAs, and anomaly alerts for reliability.
-                  </li>
-                  <li>Shipped Streamlit dashboards for real-time AQ insights and trend monitoring.</li>
-                </ul>
-              </div>
-
-              <div class="project-tech">
-                <span class="tech-tag">Airflow</span>
-                <span class="tech-tag">dbt</span>
-                <span class="tech-tag">Snowflake</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Streamlit</span>
-              </div>
+            </div>
+            <div class="project-features">
+              <h4>Highlights</h4>
+              <ul>
+                <li>Built hourly ingestion from OpenAQ with Airflow orchestration and dbt transformations in Snowflake.</li>
+                <li>Added governance controls: RBAC, audit logs, freshness SLAs, and anomaly alerts for reliability.</li>
+                <li>Shipped Streamlit dashboards for real-time AQ insights and trend monitoring.</li>
+              </ul>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">Airflow</span>
+              <span class="tech-tag">dbt</span>
+              <span class="tech-tag">Snowflake</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Streamlit</span>
             </div>
           </article>
 
           <!-- Project: SQL Chatbot -->
           <article class="project-card">
-            <div class="project-content">
+            <div class="project-header">
               <h3 class="project-title">SQL Chatbot with LangChain</h3>
               <p class="project-description">NL → SQL · Guardrails · Multi-DB · Streamlit</p>
-
-              <div class="project-features">
-                <h4>Highlights</h4>
-                <ul>
-                  <li>Converted natural language questions into validated, optimized SQL using LLM orchestration.</li>
-                  <li>Added query guardrails and safety checks; supported PostgreSQL/MySQL/Snowflake backends.</li>
-                  <li>Improved user latency with caching and a query-history UX.</li>
-                </ul>
-              </div>
-
-              <div class="project-tech">
-                <span class="tech-tag">LangChain</span>
-                <span class="tech-tag">Gemini</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">Streamlit</span>
-                <span class="tech-tag">FastAPI</span>
-              </div>
+            </div>
+            <div class="project-features">
+              <h4>Highlights</h4>
+              <ul>
+                <li>Converted natural language questions into validated, optimized SQL using LLM orchestration.</li>
+                <li>Added query guardrails and safety checks; supported PostgreSQL/MySQL/Snowflake backends.</li>
+                <li>Improved user latency with caching and a query-history UX.</li>
+              </ul>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">LangChain</span>
+              <span class="tech-tag">Gemini</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">FastAPI</span>
             </div>
           </article>
         </div>
 
-        <h3 class="projects-category-title" style="margin-bottom: 2rem; font-size: 1.5rem; color: var(--text);">Machine
-          Learning & AI</h3>
+        <h3 class="projects-category-title">Machine Learning & AI</h3>
         <div class="project-grid">
+          <!-- Project: Tax Filing Chatbot -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">
+                IRS Tax RAG System for International Students
+                <a href="https://zealous-flower-0db75870f.2.azurestaticapps.net/" target="_blank" rel="noopener" class="metric-badge link-highlight">
+                  Try the Live Link
+                  <svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L18.99 6.41V10h2V3h-7z"/><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/></svg>
+                </a>
+              </h3>
+              <p class="project-description">Azure Serverless · Supabase pgvector · LangChain · Gemini</p>
+            </div>
+            <div class="project-features">
+              <h4>Highlights</h4>
+              <ul>
+                <li>Architected a serverless RAG system for IRS tax guidance, decoupled into a vanilla JS frontend and Azure Functions Python API.</li>
+                <li>Implemented Hybrid Search combining Google Gemini 3072D semantic vectors and native PostgreSQL BM25 Keyword Search via Supabase RRF.</li>
+                <li>Overcame strict Azure 100MB serverless limits and 429 quotas through zero-dependency LCEL abstractions and threaded batch ingestion wrappers.</li>
+                <li>Enforced strict LLM grounding with exact source citations mapped to specific IRS Form and Publication excerpts.</li>
+              </ul>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">Azure</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">LangChain</span>
+              <span class="tech-tag">Gemini</span>
+              <span class="tech-tag">Python</span>
+            </div>
+          </article>
+
           <!-- Project: Sepsis -->
           <article class="project-card">
-            <div class="project-content">
-              <h3 class="project-title">Early Sepsis Prediction using DyT Transformer <span class="metric-badge"
-                  style="display: inline-block; padding: 0.2rem 0.6rem; margin-left: 0.5rem; font-size: 0.8rem; border-radius: 4px; background: rgba(56, 189, 248, 0.15); color: var(--accent); border: 1px solid rgba(56, 189, 248, 0.3); vertical-align: middle;">AUROC
-                  0.90</span></h3>
+            <div class="project-header">
+              <h3 class="project-title">
+                Early Sepsis Prediction using DyT Transformer
+                <span class="metric-badge">AUROC 0.90</span>
+              </h3>
               <p class="project-description">PhysioNet 2019 · PyTorch · Transformers · Time-Series ML</p>
-
-              <div class="project-features">
-                <h4>Highlights</h4>
-                <ul>
-                  <li>Built a DyT-based Transformer for early warning on 1.55M ICU time steps across 40K patients.</li>
-                  <li>Introduced model-friendly normalization to preserve clinically meaningful spikes and improve
-                    robustness.</li>
-                  <li>Added time-gap embeddings to handle irregular sampling and engineered missingness-aware inputs.
-                  </li>
-                  <li>Improved rare-event performance (~1.8% positives) with Focal BCE; achieved AUROC 0.90 and ~3×
-                    AUPRC vs baseline.</li>
-                  <li>Shipped a Streamlit monitoring dashboard to visualize risk trajectories over time.</li>
-                </ul>
-              </div>
-
-              <div class="project-tech">
-                <span class="tech-tag">PyTorch</span>
-                <span class="tech-tag">Transformers</span>
-                <span class="tech-tag">Time-Series</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Streamlit</span>
-              </div>
+            </div>
+            <div class="project-features">
+              <h4>Highlights</h4>
+              <ul>
+                <li>Built a DyT-based Transformer for early warning on 1.55M ICU time steps across 40K patients.</li>
+                <li>Introduced model-friendly normalization to preserve clinically meaningful spikes and improve robustness.</li>
+                <li>Added time-gap embeddings to handle irregular sampling and engineered missingness-aware inputs.</li>
+                <li>Improved rare-event performance (~1.8% positives) with Focal BCE; achieved AUROC 0.90 and ~3× AUPRC vs baseline.</li>
+                <li>Shipped a Streamlit monitoring dashboard to visualize risk trajectories over time.</li>
+              </ul>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">Transformers</span>
+              <span class="tech-tag">Time-Series</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Streamlit</span>
             </div>
           </article>
 
           <!-- Project: Blood Glucose -->
           <article class="project-card">
-            <div class="project-content">
-              <h3 class="project-title">Blood Glucose Prediction System <span class="metric-badge"
-                  style="display: inline-block; padding: 0.2rem 0.6rem; margin-left: 0.5rem; font-size: 0.8rem; border-radius: 4px; background: rgba(56, 189, 248, 0.15); color: var(--accent); border: 1px solid rgba(56, 189, 248, 0.3); vertical-align: middle;">RMSE
-                  2.05</span></h3>
+            <div class="project-header">
+              <h3 class="project-title">
+                Blood Glucose Prediction System
+                <span class="metric-badge">RMSE 2.05</span>
+              </h3>
               <p class="project-description">Time-Series ML · XGBoost · LightGBM · Feature Engineering</p>
-
-              <div class="project-features">
-                <h4>Highlights</h4>
-                <ul>
-                  <li>Built a forecasting pipeline to predict blood glucose 1 hour ahead from CGM + insulin pump
-                    signals.</li>
-                  <li>Implemented automated feature selection with ANOVA-based significance testing and robust
-                    evaluation.</li>
-                  <li>Achieved RMSE ~2.05 with gradient-boosting baselines and ensemble stabilization.</li>
-                </ul>
-              </div>
-
-              <div class="project-tech">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">XGBoost</span>
-                <span class="tech-tag">LightGBM</span>
-                <span class="tech-tag">Scikit-learn</span>
-                <span class="tech-tag">Time Series</span>
-              </div>
+            </div>
+            <div class="project-features">
+              <h4>Highlights</h4>
+              <ul>
+                <li>Built a forecasting pipeline to predict blood glucose 1 hour ahead from CGM + insulin pump signals.</li>
+                <li>Implemented automated feature selection with ANOVA-based significance testing and robust evaluation.</li>
+                <li>Achieved RMSE ~2.05 with gradient-boosting baselines and ensemble stabilization.</li>
+              </ul>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">XGBoost</span>
+              <span class="tech-tag">LightGBM</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Time Series</span>
             </div>
           </article>
 
           <!-- Project: Legal Doc -->
           <article class="project-card">
-            <div class="project-content">
+            <div class="project-header">
               <h3 class="project-title">Legal Document Summarization & Explanation (QLoRA)</h3>
               <p class="project-description">Mistral-7B · QLoRA · NLP · Streamlit</p>
-
-              <div class="project-features">
-                <h4>Highlights</h4>
-                <ul>
-                  <li>Fine-tuned Mistral-7B with QLoRA for summarization + contextual explanation in one generation
-                    step.</li>
-                  <li>Built a glossary-augmented training pipeline to improve clarity for non-expert readers.</li>
-                  <li>Evaluated with ROUGE, readability, and custom explanation metrics; packaged results in a UI.</li>
-                </ul>
-              </div>
-
-              <div class="project-tech">
-                <span class="tech-tag">Mistral-7B</span>
-                <span class="tech-tag">QLoRA</span>
-                <span class="tech-tag">NLP</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Streamlit</span>
-              </div>
+            </div>
+            <div class="project-features">
+              <h4>Highlights</h4>
+              <ul>
+                <li>Fine-tuned Mistral-7B with QLoRA for summarization + contextual explanation in one generation step.</li>
+                <li>Built a glossary-augmented training pipeline to improve clarity for non-expert readers.</li>
+                <li>Evaluated with ROUGE, readability, and custom explanation metrics; packaged results in a UI.</li>
+              </ul>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">Mistral-7B</span>
+              <span class="tech-tag">QLoRA</span>
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Streamlit</span>
             </div>
           </article>
 
           <!-- Project: CultureGraph -->
           <article class="project-card">
-            <div class="project-content">
+            <div class="project-header">
               <h3 class="project-title">Co-Founder Compatibility AI Platform</h3>
               <p class="project-description">Qloo · Gemini · NLP + Sentiment · Streamlit</p>
-
-              <div class="project-features">
-                <h4>Highlights</h4>
-                <ul>
-                  <li>Built a cultural + scenario-based compatibility engine using Qloo embeddings and Gemini reasoning.
-                  </li>
-                  <li>Implemented parallel scoring (NLP, LLM, sentiment) with explainable dimension breakdowns.</li>
-                  <li>Delivered interactive reports and dashboards for real-time comparisons.</li>
-                </ul>
-              </div>
-
-              <div class="project-tech">
-                <span class="tech-tag">Streamlit</span>
-                <span class="tech-tag">Gemini</span>
-                <span class="tech-tag">Qloo API</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">NLP</span>
-              </div>
+            </div>
+            <div class="project-features">
+              <h4>Highlights</h4>
+              <ul>
+                <li>Built a cultural + scenario-based compatibility engine using Qloo embeddings and Gemini reasoning.</li>
+                <li>Implemented parallel scoring (NLP, LLM, sentiment) with explainable dimension breakdowns.</li>
+                <li>Delivered interactive reports and dashboards for real-time comparisons.</li>
+              </ul>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Gemini</span>
+              <span class="tech-tag">Qloo API</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">NLP</span>
             </div>
           </article>
         </div>
@@ -557,74 +516,70 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section skills">
-      <div class="container">
-        <p class="section-label">SKILLS</p>
-        <h2 class="section-title">Technologies &amp; Tools</h2>
-        <p class="section-subtitle">Selected tools I use to build reliable data + ML systems.</p>
+    <section id="skills" class="section">
+      <div class="container animate-on-scroll">
+        <div class="section-header">
+          <p class="section-label">SKILLS</p>
+          <h2 class="section-title">Technologies &amp; Tools</h2>
+          <p class="section-subtitle">Selected tools I use to build reliable data + ML systems.</p>
+        </div>
 
         <div class="skills-grid">
           <article class="skill-card">
             <h3 class="skill-category">Data Engineering</h3>
-            <p class="skill-list" style="margin-bottom: 0.4rem;"><strong>Expert:</strong> Python • SQL • PySpark •
-              Databricks</p>
-            <p class="skill-list"><strong>Familiar:</strong> Snowflake • dbt • Airflow • NiFi • PostgreSQL</p>
+            <p class="skill-list"><strong>Expert:</strong> Python &bull; SQL &bull; PySpark &bull; Databricks</p>
+            <p class="skill-list"><strong>Familiar:</strong> Snowflake &bull; dbt &bull; Airflow &bull; NiFi &bull; PostgreSQL</p>
           </article>
 
           <article class="skill-card">
             <h3 class="skill-category">Cloud &amp; Infra</h3>
-            <p class="skill-list" style="margin-bottom: 0.4rem;"><strong>Expert:</strong> AWS (S3, EC2, Lambda) • Azure
-              (ADF, Storage) • Terraform</p>
-            <p class="skill-list"><strong>Familiar:</strong> Glue • Athena • CloudWatch • Azure Databricks</p>
+            <p class="skill-list"><strong>Expert:</strong> AWS (S3, EC2, Lambda) &bull; Azure (ADF, Storage) &bull; Terraform</p>
+            <p class="skill-list"><strong>Familiar:</strong> Glue &bull; Athena &bull; CloudWatch &bull; Azure Databricks</p>
           </article>
 
           <article class="skill-card">
             <h3 class="skill-category">Governance &amp; Reliability</h3>
-            <p class="skill-list" style="margin-bottom: 0.4rem;"><strong>Expert:</strong> Data Quality • Lineage • Unity
-              Catalog</p>
-            <p class="skill-list"><strong>Familiar:</strong> RBAC • Audit Logs • Freshness SLAs • Monitoring</p>
+            <p class="skill-list"><strong>Expert:</strong> Data Quality &bull; Lineage &bull; Unity Catalog</p>
+            <p class="skill-list"><strong>Familiar:</strong> RBAC &bull; Audit Logs &bull; Freshness SLAs &bull; Monitoring</p>
           </article>
 
           <article class="skill-card">
             <h3 class="skill-category">ML / Deep Learning</h3>
-            <p class="skill-list" style="margin-bottom: 0.4rem;"><strong>Expert:</strong> PyTorch • Transformers •
-              Time-Series ML • Scikit-learn</p>
-            <p class="skill-list"><strong>Familiar:</strong> NLP • LangChain • Gemini • XGBoost • LightGBM</p>
+            <p class="skill-list"><strong>Expert:</strong> PyTorch &bull; Transformers &bull; Time-Series ML &bull; Scikit-learn</p>
+            <p class="skill-list"><strong>Familiar:</strong> NLP &bull; LangChain &bull; Gemini &bull; XGBoost &bull; LightGBM</p>
           </article>
 
           <article class="skill-card">
             <h3 class="skill-category">Dev &amp; Ops</h3>
-            <p class="skill-list" style="margin-bottom: 0.4rem;"><strong>Expert:</strong> Git • Linux • Bash • CI/CD</p>
-            <p class="skill-list"><strong>Familiar:</strong> Docker • IaC • Grafana • GitHub Actions</p>
+            <p class="skill-list"><strong>Expert:</strong> Git &bull; Linux &bull; Bash &bull; CI/CD</p>
+            <p class="skill-list"><strong>Familiar:</strong> Docker &bull; IaC &bull; Grafana &bull; GitHub Actions</p>
           </article>
 
           <article class="skill-card">
             <h3 class="skill-category">Dashboards</h3>
-            <p class="skill-list" style="margin-bottom: 0.4rem;"><strong>Expert:</strong> Streamlit • Analytics
-              Reporting</p>
-            <p class="skill-list"><strong>Familiar:</strong> Grafana • Power BI</p>
+            <p class="skill-list"><strong>Expert:</strong> Streamlit &bull; Analytics Reporting</p>
+            <p class="skill-list"><strong>Familiar:</strong> Grafana &bull; Power BI</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- Education -->
-    <section id="education" class="section education">
-      <div class="container education-inner">
-        <div class="education-left">
+    <section id="education" class="section">
+      <div class="container animate-on-scroll">
+        <div class="section-header">
           <p class="section-label">EDUCATION</p>
           <h2 class="section-title">Education &amp; Learning</h2>
-
-          <article class="education-card">
-            <h3 class="education-degree">M.S. in Data Science</h3>
-            <p class="education-school">University of Maryland, College Park</p>
-            <p class="education-meta">2024 – 2026 · College Park, MD</p>
-            <p class="education-desc">
-              Coursework across machine learning, deep learning, NLP, and large-scale data systems, with a focus on
-              building reliable ML-ready data pipelines.
-            </p>
-          </article>
         </div>
+        <article class="education-card">
+          <h3 class="education-degree">M.S. in Data Science</h3>
+          <p class="education-school">University of Maryland, College Park</p>
+          <p class="education-meta">2024 – 2026 · College Park, MD</p>
+          <p class="education-desc">
+            Coursework across machine learning, deep learning, NLP, and large-scale data systems, with a focus on
+            building reliable ML-ready data pipelines.
+          </p>
+        </article>
       </div>
     </section>
   </main>
@@ -632,22 +587,27 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
+      <p class="footer-text mono">&#60;data /&#62; engineered for real systems.</p>
+      <div class="footer-social">
+        <a href="mailto:varshini.sree03@gmail.com" aria-label="Email" class="link-highlight">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Email
+        </a>
+        <a href="https://www.linkedin.com/in/sreevarshini-srinivasan-3510081b7" target="_blank" rel="noopener" aria-label="LinkedIn" class="link-highlight">
+          <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-1.85 0-2.58 1-3 1.62V9.83h-2.6v8.42h2.6v-4.66c0-1.11.24-2.18 1.6-2.18 1.34 0 1.35 1.25 1.35 2.25v4.66h2.6zm-11-8.42H4.8v8.42h2.7v-8.42zm-1.35-4.14A1.6 1.6 0 1 0 7.7 7.5a1.6 1.6 0 0 0-1.55-1.56z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/SreeVarshinii" target="_blank" rel="noopener" aria-label="GitHub" class="link-highlight">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          GitHub
+        </a>
+      </div>
       <p class="footer-text">
         &copy; <span id="year"></span> Sreevarshini Srinivasan. Built with HTML, CSS &amp; JavaScript.
       </p>
-      <p class="footer-text mono">&#60;data /&#62; engineered for real systems.</p>
-      <div class="footer-social"
-        style="margin-top: 1rem; display: flex; justify-content: center; gap: 1.5rem; font-size: 1.2rem;">
-        <a href="mailto:varshini.sree03@gmail.com" aria-label="Email" style="text-decoration: underline;">Email</a>
-        <a href="https://www.linkedin.com/in/sreevarshini-srinivasan-3510081b7" target="_blank" rel="noopener"
-          aria-label="LinkedIn">LinkedIn</a>
-        <a href="https://github.com/SreeVarshinii" target="_blank" rel="noopener" aria-label="GitHub"
-          style="text-decoration: underline;">GitHub</a>
-      </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
-
 </html>
