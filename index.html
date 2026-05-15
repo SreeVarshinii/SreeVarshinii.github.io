@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Sreevarshini Srinivasan | Data Engineering × Deep Learning</title>
@@ -19,21 +20,22 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Skip link for accessibility -->
   <a href="#main" class="skip-link">Skip to main content</a>
 
   <!-- Header / Navigation -->
   <header class="site-header" id="top">
     <div class="container header-inner">
       <div class="logo" aria-label="Home">
-        <span class="logo-mark">SS</span>
-        <span class="logo-text">Sreevarshini Srinivasan</span>
+        <img src="assets/images/headshot.png" alt="Sreevarshini" class="logo-mark" />
+        <span class="logo-text">Sreevarshini</span>
       </div>
 
       <nav class="nav" aria-label="Main navigation">
@@ -44,15 +46,13 @@
         </button>
 
         <ul class="nav-links">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#pillars" class="nav-link">Focus</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
           <li>
             <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-              <!-- SVG handled by script.js -->
             </button>
           </li>
         </ul>
@@ -63,105 +63,204 @@
   <main id="main">
     <!-- Hero Section -->
     <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg-gradient"></div>
       <div class="container animate-on-scroll">
         <div class="hero-content">
-          <h1 class="hero-name" id="hero-heading">Sreevarshini&nbsp;Srinivasan</h1>
-          <p class="hero-title">Senior Data Engineer &middot; Azure &middot; Databricks &middot; Delta Lake</p>
+          <p class="hero-greeting mono">HELLO, WORLD. I AM</p>
+          <h1 class="hero-name" id="hero-heading">
+            <span class="gradient-text">Sreevarshini</span><br />Srinivasan.
+          </h1>
+          <h2 class="hero-title-bold">I build reliable data systems.</h2>
 
           <p class="hero-tagline">
-            I build production data pipelines that actually ship &mdash; 10TB lakehouse architectures, hourly batch
-            ingestion across 100+ tables, and a tax platform processing 6 years of financial data across 7 countries.
+            I'm fascinated by the mechanics of scale: how do you ingest a terabyte without losing data? What breaks
+            first when your schema changes? How do you keep pipelines reliable when everything upstream is chaotic? I
+            spend a lot of time thinking about these problems, and more time building systems that catch them before
+            they become incidents.
+            I recently finished a master's in data science, and I'm equally interested in the algorithmic side designing
+            models and learning systems that actually work at scale, not just in notebooks. But I've learned that a
+            brilliant model is worthless if the data feeding it is broken. So I design with both layers in mind:
+            infrastructure that's observable and reliable, and models that know how to fail gracefully.
+            <!-- I turn complex data challenges into resilient architecture. I build production-grade data pipelines, real-time drift detection, and explore the intersection of data engineering and deep learning. No jargon, just systems that ship. -->
           </p>
 
-          <div class="hero-cta">
-            <a href="https://www.linkedin.com/in/sreevarshini-srinivasan-3510081b7" target="_blank" rel="noopener" class="btn-primary">
-              Reach me on LinkedIn
-              <svg class="icon-sm" viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L18.99 6.41V10h2V3h-7z"/><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/></svg>
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary btn-large">
+              See my work
+              <svg class="icon-sm" viewBox="0 0 24 24">
+                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn-outline btn-large">
+              Get in touch
             </a>
           </div>
 
-          <div class="currently-building-card">
-            <h3>Currently Building</h3>
-            <p>A <strong>graph-native schema registry</strong> where:</p>
-            <ul>
-              <li>Every schema version is a node with column-level features (types, nullability, cardinality).</li>
-              <li>Every transformation between versions is a weighted directed edge (additive = low weight, breaking = high weight).</li>
-              <li>A GNN operates on this graph to predict breaking downstream consumers, safest migration paths, and drift trajectories.</li>
-              <li>SQL migrations are auto-generated by traversing the shortest path through the transformation graph.</li>
-            </ul>
+          <div class="hero-social">
+            <a href="https://www.linkedin.com/in/sreevarshini-srinivasan-3510081b7" target="_blank" rel="noopener"
+              aria-label="LinkedIn" class="link-highlight">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-1.85 0-2.58 1-3 1.62V9.83h-2.6v8.42h2.6v-4.66c0-1.11.24-2.18 1.6-2.18 1.34 0 1.35 1.25 1.35 2.25v4.66h2.6zm-11-8.42H4.8v8.42h2.7v-8.42zm-1.35-4.14A1.6 1.6 0 1 0 7.7 7.5a1.6 1.6 0 0 0-1.55-1.56z" />
+              </svg>
+            </a>
+            <a href="https://github.com/SreeVarshinii" target="_blank" rel="noopener" aria-label="GitHub"
+              class="link-highlight">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12c0-5.523-4.477-10-10-10z" />
+              </svg>
+            </a>
+            <a href="https://substack.com/@sreevarshinii" target="_blank" rel="noopener" aria-label="Substack"
+              class="link-highlight">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11L22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
+              </svg>
+            </a>
           </div>
         </div>
-
-        <div class="scroll-indicator">
-          <span>Scroll to explore</span>
-          <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-        </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
       <div class="container animate-on-scroll">
         <div class="section-header">
-          <p class="section-label">ABOUT</p>
-          <h2 class="section-title">Production Data Engineering at Scale</h2>
-        </div>
-        <div class="about-content">
-          <p class="section-body">
-            I build production data pipelines that actually ship &mdash; 10TB lakehouse architectures, hourly batch
-            ingestion across 100+ tables, and a tax calculation platform processing 6 years of financial data for a
-            retail chain operating across 7 countries.
-          </p>
-          <p class="section-body">
-            My stack is Azure-native: ADF, Databricks, Delta Live Tables, Unity Catalog, and Apache NiFi. I&rsquo;ve
-            done the full lifecycle &mdash; ingestion from Oracle, MySQL, and XML sources, medallion architecture
-            design, PySpark transformations, data quality automation, and governance via RBAC and audit logging.
-          </p>
-          <p class="section-body">
-            I&rsquo;m finishing an M.S. in Data Science at the University of Maryland (May&nbsp;2026) and moving toward
-            the intersection of data engineering and deep learning &mdash; specifically, applying graph neural networks
-            to relational enterprise data to replace manual feature engineering.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Focus / Pillars Section -->
-    <section id="pillars" class="section">
-      <div class="container animate-on-scroll">
-        <div class="section-header">
-          <p class="section-label">FOCUS</p>
-          <h2 class="section-title">What I Build</h2>
-          <p class="section-subtitle">Systems-first work across Data Engineering × Deep Learning.</p>
+          <p class="section-label">SELECTED WORK</p>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Systems that connect real data to reliable ML outcomes.</p>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card">
-            <h4 class="feature-title">Intelligent Data Pipelines</h4>
-            <p class="feature-desc">
-              Incremental ingestion, schema evolution, and validation pipelines that stay reliable under real-world change.
-            </p>
+        <div class="project-list">
+          <!-- Project 1 -->
+          <article class="project-row">
+            <div class="project-row-content">
+              <h3 class="project-title">SchemaDrift — Resilient Data Pipeline</h3>
+              <p class="project-tech mono">Python · PostgreSQL · Watchdog · Pandas · JSON Schema · EDA · SQL</p>
+              <p class="project-desc">
+                Built a self-documenting data pipeline that detects schema drift in real time, maps the blast radius of
+                mutations across Bronze/Silver/Gold layers, and auto-rescues malformed data into a dynamic PostgreSQL
+                architecture.
+              </p>
+              <div class="project-metric">
+                <strong>Impact:</strong> Auto-detects schema mutations in real-time and visualizes downstream impact
+                across 3 data layers
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/SreeVarshinii/DriftDetection" target="_blank" rel="noopener"
+                  class="btn-github">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12c0-5.523-4.477-10-10-10z" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
           </article>
 
-          <article class="feature-card">
-            <h4 class="feature-title">Model-Aware Infrastructure</h4>
-            <p class="feature-desc">
-              Feature pipelines and time-series systems designed to preserve signal, handle missingness, and support training/serving parity.
-            </p>
+          <!-- Project 2 -->
+          <article class="project-row">
+            <div class="project-row-content">
+              <h3 class="project-title">TaxFilingChatBot — AI Assistant</h3>
+              <p class="project-tech mono">Python · LLM · Docker · RAG · PDF Processing</p>
+              <p class="project-desc">
+                Containerized AI assistant that grounds responses strictly in official IRS tax documents, helping
+                international students navigate 2025 regulations with verified accuracy (no hallucinations).
+              </p>
+              <div class="project-metric">
+                <strong>Impact:</strong> Zero-hallucination tax guidance — 100% responses grounded in official IRS
+                documents
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/SreeVarshinii/TaxFilingChatBot" target="_blank" rel="noopener"
+                  class="btn-github">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12c0-5.523-4.477-10-10-10z" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
           </article>
 
-          <article class="feature-card">
-            <h4 class="feature-title">Governance & Security</h4>
-            <p class="feature-desc">
-              Gold-layer access patterns, RBAC, auditability, and controlled interfaces that let teams ship safely.
-            </p>
+          <!-- Project 3 -->
+          <article class="project-row">
+            <div class="project-row-content">
+              <h3 class="project-title">ICU Sepsis Prediction — DyT Transformer</h3>
+              <p class="project-tech mono">Python · PyTorch · Transformers · Time-Series ML</p>
+              <p class="project-desc">
+                Built a transformer-based model with dynamic normalization (DyT) that predicts sepsis risk 24+ hours in
+                advance using irregular ICU time-series data, handling missing values and temporal gaps in real-time
+                monitoring.
+              </p>
+              <div class="project-metric">
+                <strong>Impact:</strong> Achieves early sepsis prediction with adaptive handling of missing ICU data
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/SreeVarshinii/ICU_sepsis_prediction" target="_blank" rel="noopener"
+                  class="btn-github">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12c0-5.523-4.477-10-10-10z" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
           </article>
 
-          <article class="feature-card">
-            <h4 class="feature-title">Observability & Reliability</h4>
-            <p class="feature-desc">
-              Freshness SLAs, anomaly detection, monitoring dashboards, and debugging workflows built into the platform.
-            </p>
+          <!-- Project 4 -->
+          <article class="project-row">
+            <div class="project-row-content">
+              <h3 class="project-title">BrisT1D Blood Glucose Prediction</h3>
+              <p class="project-tech mono">Python · Time-Series Forecasting · XGBoost · LightGBM</p>
+              <p class="project-desc">
+                Data science project forecasting blood glucose 60 minutes ahead for Type 1 diabetes patients using CGM
+                sensors, insulin doses, and activity data—built for early intervention and personalized care.
+              </p>
+              <div class="project-metric">
+                <strong>Impact:</strong> 60-minute blood glucose forecasting for T1D patients with real-time
+                personalization
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/SreeVarshinii/BrisT1DBloodGlucosePrediction" target="_blank" rel="noopener"
+                  class="btn-github">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12c0-5.523-4.477-10-10-10z" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-row">
+            <div class="project-row-content">
+              <h3 class="project-title">TandC Summarisation — Fine-tuned LLM</h3>
+              <p class="project-tech mono">Python · Mistral-7B · QLoRA · NLP · Transformers · ROUGE</p>
+              <p class="project-desc">
+                Fine-tuned Mistral-7B with QLoRA to summarize complex Terms &amp; Conditions into plain English, making
+                legal documents accessible to non-experts.
+              </p>
+              <div class="project-metric">
+                <strong>Impact:</strong> ROUGE-based evaluation for summarization quality on legal documents
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/SreeVarshinii/TandC_Summarisation" target="_blank" rel="noopener"
+                  class="btn-github">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12c0-5.523-4.477-10-10-10z" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
           </article>
         </div>
       </div>
@@ -173,7 +272,6 @@
         <div class="section-header">
           <p class="section-label">EXPERIENCE</p>
           <h2 class="section-title">Where I've Worked</h2>
-          <p class="section-subtitle">Building data infrastructure across labs, startups, and enterprise clients.</p>
         </div>
 
         <div class="timeline">
@@ -189,16 +287,27 @@
               </div>
 
               <p class="experience-context">
-                Built lakehouse-style data infrastructure for retail analytics at scale, with reliability and governance as defaults.
+                Built lakehouse-style data infrastructure for retail analytics at scale, with reliability and governance
+                as defaults.
               </p>
 
               <ul class="experience-list">
-                <li>Created pipelines in Databricks and set up the whole system with Delta Live Tables — managing <strong>10TB of historical data</strong> and batch pipelines updating hourly for <strong>10+ sources and 100+ tables</strong> through medallion architecture.</li>
-                <li>Built an internal tax calculation platform on Azure for LuLu, a retail chain operating across 7 countries — processing <strong>6 years of historical data</strong> plus ongoing batch ingestion, with <strong>100% accuracy</strong>.</li>
-                <li>Ran Apache NiFi on a VM rather than managed cloud specifically to cut compute costs and keep sensitive financial data secure.</li>
-                <li>Implemented complex sales and inventory transformation logic to power downstream analytics and reporting.</li>
-                <li>Migrated ~6TB data from legacy databases (Oracle, MySQL) into Azure ecosystem and authored complex SQL and Python queries for robust data processing.</li>
-                <li>Led migration to Unity Catalog, optimizing data management and governance for a massive retail chain in the Middle East.</li>
+                <li>Created pipelines in Databricks and set up the whole system with Delta Live Tables — managing
+                  <strong>10TB of historical data</strong> and batch pipelines updating hourly for <strong>10+ sources
+                    and 100+ tables</strong> through medallion architecture.
+                </li>
+                <li>Built an internal tax calculation platform on Azure for LuLu, a retail chain operating across 7
+                  countries — processing <strong>6 years of historical data</strong> plus ongoing batch ingestion, with
+                  <strong>100% accuracy</strong>.
+                </li>
+                <li>Ran Apache NiFi on a VM rather than managed cloud specifically to cut compute costs and keep
+                  sensitive financial data secure.</li>
+                <li>Implemented complex sales and inventory transformation logic to power downstream analytics and
+                  reporting.</li>
+                <li>Migrated ~6TB data from legacy databases (Oracle, MySQL) into Azure ecosystem and authored complex
+                  SQL and Python queries for robust data processing.</li>
+                <li>Led migration to Unity Catalog, optimizing data management and governance for a massive retail chain
+                  in the Middle East.</li>
               </ul>
 
               <div class="tech-tags">
@@ -211,7 +320,6 @@
                 <span class="tech-tag">SQL</span>
                 <span class="tech-tag">Oracle</span>
                 <span class="tech-tag">Azure Storage</span>
-                <span class="tech-tag">Linux</span>
               </div>
             </div>
           </article>
@@ -232,11 +340,15 @@
               </p>
 
               <ul class="experience-list">
-                <li>Built ADF pipelines orchestrating ingestion from diverse sources (Oracle, MySQL, XMLs, CSVs) in Azure Storage.</li>
+                <li>Built ADF pipelines orchestrating ingestion from diverse sources (Oracle, MySQL, XMLs, CSVs) in
+                  Azure Storage.</li>
                 <li>Authored complex SQL and Python queries for efficient data processing and transformation.</li>
-                <li>Automated validation processes across large datasets, capturing issues early and ensuring integrity.</li>
-                <li>Led foundational migration efforts to Unity Catalog to improve governance and data discoverability.</li>
-                <li>Improved data flow efficiency by <strong>40%</strong> via incremental load strategies and tuning, contributing to streamlined operations.</li>
+                <li>Automated validation processes across large datasets, capturing issues early and ensuring integrity.
+                </li>
+                <li>Led foundational migration efforts to Unity Catalog to improve governance and data discoverability.
+                </li>
+                <li>Improved data flow efficiency by <strong>40%</strong> via incremental load strategies and tuning,
+                  contributing to streamlined operations.</li>
               </ul>
 
               <div class="tech-tags">
@@ -245,9 +357,7 @@
                 <span class="tech-tag">Python</span>
                 <span class="tech-tag">Oracle</span>
                 <span class="tech-tag">MySQL</span>
-                <span class="tech-tag">Azure Storage</span>
                 <span class="tech-tag">Unity Catalog</span>
-                <span class="tech-tag">Data Validation</span>
               </div>
             </div>
           </article>
@@ -264,15 +374,21 @@
               </div>
 
               <p class="experience-context">
-                Built automation-first cloud infrastructure with monitoring, security best practices, and reproducible deployments.
+                Built automation-first cloud infrastructure with monitoring, security best practices, and reproducible
+                deployments.
               </p>
 
               <ul class="experience-list">
-                <li>Founding engineer responsible for setting up end-to-end ingestion for structured and unstructured data.</li>
-                <li>Deployed AWS (RDS, EC2) and Azure infrastructure ensuring high availability and scalable patterns.</li>
-                <li>Automated resource provisioning with Terraform, enhancing operational efficiency and cutting manual overhead by <strong>60%</strong>.</li>
-                <li>Integrated monitoring via CloudWatch and Grafana to track system performance and resolve incidents early.</li>
-                <li>Collaborated on CI/CD pipelines and enforced cloud security best practices through IAM and secrets management.</li>
+                <li>Founding engineer responsible for setting up end-to-end ingestion for structured and unstructured
+                  data.</li>
+                <li>Deployed AWS (RDS, EC2) and Azure infrastructure ensuring high availability and scalable patterns.
+                </li>
+                <li>Automated resource provisioning with Terraform, enhancing operational efficiency and cutting manual
+                  overhead by <strong>60%</strong>.</li>
+                <li>Integrated monitoring via CloudWatch and Grafana to track system performance and resolve incidents
+                  early.</li>
+                <li>Collaborated on CI/CD pipelines and enforced cloud security best practices through IAM and secrets
+                  management.</li>
               </ul>
 
               <div class="tech-tags">
@@ -282,8 +398,6 @@
                 <span class="tech-tag">Grafana</span>
                 <span class="tech-tag">CloudWatch</span>
                 <span class="tech-tag">CI/CD</span>
-                <span class="tech-tag">IAM</span>
-                <span class="tech-tag">IaC</span>
               </div>
             </div>
           </article>
@@ -314,7 +428,6 @@
                 <span class="tech-tag">Robotics</span>
                 <span class="tech-tag">Technical Support</span>
                 <span class="tech-tag">Documentation</span>
-                <span class="tech-tag">Mentorship</span>
               </div>
             </div>
           </article>
@@ -322,231 +435,43 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <div class="container animate-on-scroll">
-        <div class="section-header">
-          <p class="section-label">PROJECTS</p>
-          <h2 class="section-title">Things I've Built</h2>
-          <p class="section-subtitle">Systems that connect real data to reliable ML outcomes.</p>
-        </div>
-
-        <h3 class="projects-category-title">Data Engineering</h3>
-        <div class="project-grid" style="margin-bottom: 3rem;">
-          <!-- Project: Air Quality -->
-          <article class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">Real-Time Air Quality Data Pipeline & Dashboard</h3>
-              <p class="project-description">Airflow · dbt · Snowflake · Data Quality · Monitoring</p>
-            </div>
-            <div class="project-features">
-              <h4>Highlights</h4>
-              <ul>
-                <li>Built hourly ingestion from OpenAQ with Airflow orchestration and dbt transformations in Snowflake.</li>
-                <li>Added governance controls: RBAC, audit logs, freshness SLAs, and anomaly alerts for reliability.</li>
-                <li>Shipped Streamlit dashboards for real-time AQ insights and trend monitoring.</li>
-              </ul>
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">Airflow</span>
-              <span class="tech-tag">dbt</span>
-              <span class="tech-tag">Snowflake</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Streamlit</span>
-            </div>
-          </article>
-
-          <!-- Project: SQL Chatbot -->
-          <article class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">SQL Chatbot with LangChain</h3>
-              <p class="project-description">NL → SQL · Guardrails · Multi-DB · Streamlit</p>
-            </div>
-            <div class="project-features">
-              <h4>Highlights</h4>
-              <ul>
-                <li>Converted natural language questions into validated, optimized SQL using LLM orchestration.</li>
-                <li>Added query guardrails and safety checks; supported PostgreSQL/MySQL/Snowflake backends.</li>
-                <li>Improved user latency with caching and a query-history UX.</li>
-              </ul>
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">LangChain</span>
-              <span class="tech-tag">Gemini</span>
-              <span class="tech-tag">PostgreSQL</span>
-              <span class="tech-tag">Streamlit</span>
-              <span class="tech-tag">FastAPI</span>
-            </div>
-          </article>
-        </div>
-
-        <h3 class="projects-category-title">Machine Learning & AI</h3>
-        <div class="project-grid">
-          <!-- Project: Tax Filing Chatbot -->
-          <article class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">
-                IRS Tax RAG System for International Students
-                <a href="https://zealous-flower-0db75870f.2.azurestaticapps.net/" target="_blank" rel="noopener" class="metric-badge link-highlight">
-                  Try the Live Link
-                  <svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L18.99 6.41V10h2V3h-7z"/><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/></svg>
-                </a>
-              </h3>
-              <p class="project-description">Azure Serverless · Supabase pgvector · LangChain · Gemini</p>
-            </div>
-            <div class="project-features">
-              <h4>Highlights</h4>
-              <ul>
-                <li>Architected a serverless RAG system for IRS tax guidance, decoupled into a vanilla JS frontend and Azure Functions Python API.</li>
-                <li>Implemented Hybrid Search combining Google Gemini 3072D semantic vectors and native PostgreSQL BM25 Keyword Search via Supabase RRF.</li>
-                <li>Overcame strict Azure 100MB serverless limits and 429 quotas through zero-dependency LCEL abstractions and threaded batch ingestion wrappers.</li>
-                <li>Enforced strict LLM grounding with exact source citations mapped to specific IRS Form and Publication excerpts.</li>
-              </ul>
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">Azure</span>
-              <span class="tech-tag">Supabase</span>
-              <span class="tech-tag">LangChain</span>
-              <span class="tech-tag">Gemini</span>
-              <span class="tech-tag">Python</span>
-            </div>
-          </article>
-
-          <!-- Project: Sepsis -->
-          <article class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">
-                Early Sepsis Prediction using DyT Transformer
-                <span class="metric-badge">AUROC 0.90</span>
-              </h3>
-              <p class="project-description">PhysioNet 2019 · PyTorch · Transformers · Time-Series ML</p>
-            </div>
-            <div class="project-features">
-              <h4>Highlights</h4>
-              <ul>
-                <li>Built a DyT-based Transformer for early warning on 1.55M ICU time steps across 40K patients.</li>
-                <li>Introduced model-friendly normalization to preserve clinically meaningful spikes and improve robustness.</li>
-                <li>Added time-gap embeddings to handle irregular sampling and engineered missingness-aware inputs.</li>
-                <li>Improved rare-event performance (~1.8% positives) with Focal BCE; achieved AUROC 0.90 and ~3× AUPRC vs baseline.</li>
-                <li>Shipped a Streamlit monitoring dashboard to visualize risk trajectories over time.</li>
-              </ul>
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">PyTorch</span>
-              <span class="tech-tag">Transformers</span>
-              <span class="tech-tag">Time-Series</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Streamlit</span>
-            </div>
-          </article>
-
-          <!-- Project: Blood Glucose -->
-          <article class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">
-                Blood Glucose Prediction System
-                <span class="metric-badge">RMSE 2.05</span>
-              </h3>
-              <p class="project-description">Time-Series ML · XGBoost · LightGBM · Feature Engineering</p>
-            </div>
-            <div class="project-features">
-              <h4>Highlights</h4>
-              <ul>
-                <li>Built a forecasting pipeline to predict blood glucose 1 hour ahead from CGM + insulin pump signals.</li>
-                <li>Implemented automated feature selection with ANOVA-based significance testing and robust evaluation.</li>
-                <li>Achieved RMSE ~2.05 with gradient-boosting baselines and ensemble stabilization.</li>
-              </ul>
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">XGBoost</span>
-              <span class="tech-tag">LightGBM</span>
-              <span class="tech-tag">Scikit-learn</span>
-              <span class="tech-tag">Time Series</span>
-            </div>
-          </article>
-
-          <!-- Project: Legal Doc -->
-          <article class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">Legal Document Summarization & Explanation (QLoRA)</h3>
-              <p class="project-description">Mistral-7B · QLoRA · NLP · Streamlit</p>
-            </div>
-            <div class="project-features">
-              <h4>Highlights</h4>
-              <ul>
-                <li>Fine-tuned Mistral-7B with QLoRA for summarization + contextual explanation in one generation step.</li>
-                <li>Built a glossary-augmented training pipeline to improve clarity for non-expert readers.</li>
-                <li>Evaluated with ROUGE, readability, and custom explanation metrics; packaged results in a UI.</li>
-              </ul>
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">Mistral-7B</span>
-              <span class="tech-tag">QLoRA</span>
-              <span class="tech-tag">NLP</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Streamlit</span>
-            </div>
-          </article>
-
-          <!-- Project: CultureGraph -->
-          <article class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">Co-Founder Compatibility AI Platform</h3>
-              <p class="project-description">Qloo · Gemini · NLP + Sentiment · Streamlit</p>
-            </div>
-            <div class="project-features">
-              <h4>Highlights</h4>
-              <ul>
-                <li>Built a cultural + scenario-based compatibility engine using Qloo embeddings and Gemini reasoning.</li>
-                <li>Implemented parallel scoring (NLP, LLM, sentiment) with explainable dimension breakdowns.</li>
-                <li>Delivered interactive reports and dashboards for real-time comparisons.</li>
-              </ul>
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">Streamlit</span>
-              <span class="tech-tag">Gemini</span>
-              <span class="tech-tag">Qloo API</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">NLP</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- Skills Section -->
-    <section id="skills" class="section">
+    <section id="skills" class="section section-alt">
       <div class="container animate-on-scroll">
         <div class="section-header">
           <p class="section-label">SKILLS</p>
           <h2 class="section-title">Technologies &amp; Tools</h2>
-          <p class="section-subtitle">Selected tools I use to build reliable data + ML systems.</p>
         </div>
 
         <div class="skills-grid">
           <article class="skill-card">
             <h3 class="skill-category">Data Engineering</h3>
             <p class="skill-list"><strong>Expert:</strong> Python &bull; SQL &bull; PySpark &bull; Databricks</p>
-            <p class="skill-list"><strong>Familiar:</strong> Snowflake &bull; dbt &bull; Airflow &bull; NiFi &bull; PostgreSQL</p>
+            <p class="skill-list"><strong>Familiar:</strong> Snowflake &bull; dbt &bull; Airflow &bull; NiFi &bull;
+              PostgreSQL</p>
           </article>
 
           <article class="skill-card">
             <h3 class="skill-category">Cloud &amp; Infra</h3>
-            <p class="skill-list"><strong>Expert:</strong> AWS (S3, EC2, Lambda) &bull; Azure (ADF, Storage) &bull; Terraform</p>
-            <p class="skill-list"><strong>Familiar:</strong> Glue &bull; Athena &bull; CloudWatch &bull; Azure Databricks</p>
+            <p class="skill-list"><strong>Expert:</strong> AWS (S3, EC2, Lambda) &bull; Azure (ADF, Storage) &bull;
+              Terraform</p>
+            <p class="skill-list"><strong>Familiar:</strong> Glue &bull; Athena &bull; CloudWatch &bull; Azure
+              Databricks</p>
           </article>
 
           <article class="skill-card">
             <h3 class="skill-category">Governance &amp; Reliability</h3>
             <p class="skill-list"><strong>Expert:</strong> Data Quality &bull; Lineage &bull; Unity Catalog</p>
-            <p class="skill-list"><strong>Familiar:</strong> RBAC &bull; Audit Logs &bull; Freshness SLAs &bull; Monitoring</p>
+            <p class="skill-list"><strong>Familiar:</strong> RBAC &bull; Audit Logs &bull; Freshness SLAs &bull;
+              Monitoring</p>
           </article>
 
           <article class="skill-card">
             <h3 class="skill-category">ML / Deep Learning</h3>
-            <p class="skill-list"><strong>Expert:</strong> PyTorch &bull; Transformers &bull; Time-Series ML &bull; Scikit-learn</p>
-            <p class="skill-list"><strong>Familiar:</strong> NLP &bull; LangChain &bull; Gemini &bull; XGBoost &bull; LightGBM</p>
+            <p class="skill-list"><strong>Expert:</strong> PyTorch &bull; Transformers &bull; Time-Series ML &bull;
+              Scikit-learn</p>
+            <p class="skill-list"><strong>Familiar:</strong> NLP &bull; LangChain &bull; Gemini &bull; XGBoost &bull;
+              LightGBM</p>
           </article>
 
           <article class="skill-card">
@@ -564,8 +489,35 @@
       </div>
     </section>
 
-    <!-- Education -->
-    <section id="education" class="section">
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container animate-on-scroll">
+        <div class="section-header">
+          <p class="section-label">ABOUT</p>
+          <h2 class="section-title">The plumbing that makes big data work.</h2>
+        </div>
+        <div class="about-content max-w-text">
+          <p class="section-body">
+            Hi, I'm Sreevarshini. I build infrastructure for data and AI systems.
+          </p>
+          <p class="section-body">
+            I'm fascinated by the mechanics of scale: how do you ingest a terabyte without losing data? What breaks
+            first when your schema changes? How do you keep pipelines reliable when everything upstream is chaotic? I
+            spend a lot of time thinking about these problems, and more time building systems that catch them before
+            they become incidents.
+          </p>
+          <p class="section-body">
+            I recently finished a master's in data science, and I'm equally interested in the algorithmic side—designing
+            models and learning systems that actually work at scale, not just in notebooks. But I've learned that a
+            brilliant model is worthless if the data feeding it is broken. So I design with both layers in mind:
+            infrastructure that's observable and reliable, and models that know how to fail gracefully.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
       <div class="container animate-on-scroll">
         <div class="section-header">
           <p class="section-label">EDUCATION</p>
@@ -582,6 +534,20 @@
         </article>
       </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container animate-on-scroll">
+        <div class="contact-content">
+          <h2 class="contact-title">Let's build something.</h2>
+          <p class="contact-desc">Currently open for new opportunities. Whether you have a question or just want to say
+            hi, my inbox is always open.</p>
+          <div class="contact-buttons">
+            <a href="mailto:varshini.sree03@gmail.com" class="btn-primary btn-huge">Say Hello</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -589,25 +555,35 @@
     <div class="container footer-inner">
       <p class="footer-text mono">&#60;data /&#62; engineered for real systems.</p>
       <div class="footer-social">
-        <a href="mailto:varshini.sree03@gmail.com" aria-label="Email" class="link-highlight">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          Email
+        <a href="https://www.linkedin.com/in/sreevarshini-srinivasan-3510081b7" target="_blank" rel="noopener"
+          aria-label="LinkedIn" class="link-highlight">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-1.85 0-2.58 1-3 1.62V9.83h-2.6v8.42h2.6v-4.66c0-1.11.24-2.18 1.6-2.18 1.34 0 1.35 1.25 1.35 2.25v4.66h2.6zm-11-8.42H4.8v8.42h2.7v-8.42zm-1.35-4.14A1.6 1.6 0 1 0 7.7 7.5a1.6 1.6 0 0 0-1.55-1.56z" />
+          </svg>
         </a>
-        <a href="https://www.linkedin.com/in/sreevarshini-srinivasan-3510081b7" target="_blank" rel="noopener" aria-label="LinkedIn" class="link-highlight">
-          <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-1.85 0-2.58 1-3 1.62V9.83h-2.6v8.42h2.6v-4.66c0-1.11.24-2.18 1.6-2.18 1.34 0 1.35 1.25 1.35 2.25v4.66h2.6zm-11-8.42H4.8v8.42h2.7v-8.42zm-1.35-4.14A1.6 1.6 0 1 0 7.7 7.5a1.6 1.6 0 0 0-1.55-1.56z"/></svg>
-          LinkedIn
+        <a href="https://github.com/SreeVarshinii" target="_blank" rel="noopener" aria-label="GitHub"
+          class="link-highlight">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12c0-5.523-4.477-10-10-10z" />
+          </svg>
         </a>
-        <a href="https://github.com/SreeVarshinii" target="_blank" rel="noopener" aria-label="GitHub" class="link-highlight">
-          <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12c0-5.523-4.477-10-10-10z"/></svg>
-          GitHub
+        <a href="https://substack.com/@sreevarshinii" target="_blank" rel="noopener" aria-label="Substack"
+          class="link-highlight">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11L22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
+          </svg>
         </a>
       </div>
       <p class="footer-text">
-        &copy; <span id="year"></span> Sreevarshini Srinivasan. Built with HTML, CSS &amp; JavaScript.
+        &copy; <span id="year"></span> Sreevarshini Srinivasan.
       </p>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
