@@ -131,8 +131,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* -------------------------------------------
-     6. Smooth Scroll for Anchor Links
+     6. Dynamic Section Switching (Single Page Router)
   ------------------------------------------- */
+  const sections = document.querySelectorAll('main > section');
+  const navLinksList = document.querySelectorAll('.nav-link');
+
+  const updateActiveSection = (targetId) => {
+    // Default to hero if no hash or invalid target
+    if (!targetId || targetId === '#' || targetId === '#hero') {
+      targetId = '#hero';
+    }
+    
+    const targetSection = document.querySelector(targetId);
+    if (!targetSection) return;
+
+    // Hide all sections, remove active class
+    sections.forEach(sec => {
+      sec.classList.add('hidden-section');
+      sec.classList.remove('section-fade');
+    });
+
+    // Display active section and trigger entrance animation
+    targetSection.classList.remove('hidden-section');
+    targetSection.classList.add('section-fade');
+
+    // Trigger inner scroll animations immediately for all elements
+    targetSection.querySelectorAll('.animate-on-scroll').forEach(el => {
+      el.classList.add('is-visible');
+    });
+
+    // Special Case: Display Education section directly underneath About section
+    const educationSec = document.getElementById('education');
+    if (targetId === '#about' && educationSec) {
+      educationSec.classList.remove('hidden-section');
+      educationSec.classList.add('section-fade');
+      educationSec.querySelectorAll('.animate-on-scroll').forEach(el => {
+        el.classList.add('is-visible');
+      });
+    }
+
+    // Update nav links active class
+    navLinksList.forEach(link => {
+      if (link.getAttribute('href') === targetId) {
+        link.classList.add('active-route');
+      } else {
+        link.classList.remove('active-route');
+      }
+    });
+
+    // Reset scroll viewport position to top
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  // Attach router handlers to all hash link anchors
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
@@ -141,16 +195,22 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         e.preventDefault();
-        // Offset for fixed header
-        const headerOffset = 70;
-        const elementPosition = targetElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
+        
+        // Push hash state to history
+        history.pushState(null, '', targetId);
+        
+        // Update visibility
+        updateActiveSection(targetId);
       }
     });
   });
+
+  // Handle browser back and forward button routing
+  window.addEventListener('popstate', () => {
+    updateActiveSection(window.location.hash || '#hero');
+  });
+
+  // Run initial router state on page load (handles deep links /#about etc.)
+  const initialHash = window.location.hash || '#hero';
+  updateActiveSection(initialHash);
 });
