@@ -72,7 +72,7 @@
               <span class="gradient-text">Sreevarshini</span> Srinivasan.
             </h1>
             <h2 class="hero-title-bold">Data and AI Infrastructure Engineer</h2>
-            
+
             <div class="hero-badges">
               <span class="hero-badge">Azure</span>
               <span class="hero-badge">Databricks</span>
@@ -81,7 +81,8 @@
             </div>
 
             <p class="hero-pitch">
-              I build reliable data and AI infrastructure that doesn't break at scale. Currently finishing an M.S. in Data Science at UMD.
+              I build reliable data and AI infrastructure that doesn't break at scale. Graduated with an M.S. in Data
+              Science at UMD, College Park.
             </p>
 
             <div class="hero-cta-group">
@@ -147,7 +148,35 @@
         </div>
 
         <div class="project-list">
-          <!-- Project 1 -->
+          <!-- Project 1: Feature Store ML Pipeline & Drift Detection -->
+          <article class="project-row">
+            <div class="project-row-content">
+              <h3 class="project-title">FeatureStore — ML Infrastructure & Drift Detection</h3>
+              <p class="project-tech mono">Python · PySpark · Feast · Delta Lake · Evidently AI · Streamlit · Airflow ·
+                Scikit-learn</p>
+              <p class="project-desc">
+                Built a production-grade ML infrastructure pipeline featuring a versioned Feast feature store,
+                transaction-safe Delta Lake storage, PySpark feature engineering, and Evidently AI monitoring to
+                automate retraining loops.
+              </p>
+              <div class="project-metric">
+                Automatically detects and quarantines feature drift (e.g., 36.7% drift in user income data), initiating
+                a retraining loop that improved model accuracy by +8.9% and recovered AUC ROC to 0.7475.
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/SreeVarshinii/feature-store-pipeline" target="_blank" rel="noopener"
+                  class="btn-github">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12c0-5.523-4.477-10-10-10z" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
           <article class="project-row">
             <div class="project-row-content">
               <h3 class="project-title">SchemaDrift — Resilient Data Pipeline</h3>
@@ -158,7 +187,7 @@
                 architecture.
               </p>
               <div class="project-metric">
-                <strong>Impact:</strong> Auto-detects schema mutations in real-time and visualizes downstream impact
+                Auto-detects schema mutations in real-time and visualizes downstream impact
                 across 3 data layers
               </div>
               <div class="project-links">
@@ -184,7 +213,7 @@
                 international students navigate 2025 regulations with verified accuracy (no hallucinations).
               </p>
               <div class="project-metric">
-                <strong>Impact:</strong> Zero-hallucination tax guidance — 100% responses grounded in official IRS
+                Zero-hallucination tax guidance — 100% responses grounded in official IRS
                 documents
               </div>
               <div class="project-links">
@@ -211,7 +240,7 @@
                 monitoring.
               </p>
               <div class="project-metric">
-                <strong>Impact:</strong> Achieves early sepsis prediction with adaptive handling of missing ICU data
+                Achieves early sepsis prediction with adaptive handling of missing ICU data
               </div>
               <div class="project-links">
                 <a href="https://github.com/SreeVarshinii/ICU_sepsis_prediction" target="_blank" rel="noopener"
@@ -236,7 +265,7 @@
                 sensors, insulin doses, and activity data—built for early intervention and personalized care.
               </p>
               <div class="project-metric">
-                <strong>Impact:</strong> 60-minute blood glucose forecasting for T1D patients with real-time
+                60-minute blood glucose forecasting for T1D patients with real-time
                 personalization
               </div>
               <div class="project-links">
@@ -262,7 +291,7 @@
                 legal documents accessible to non-experts.
               </p>
               <div class="project-metric">
-                <strong>Impact:</strong> ROUGE-based evaluation for summarization quality on legal documents
+                ROUGE-based evaluation for summarization quality on legal documents
               </div>
               <div class="project-links">
                 <a href="https://github.com/SreeVarshinii/TandC_Summarisation" target="_blank" rel="noopener"
@@ -460,44 +489,44 @@
         <div class="skills-grid">
           <article class="skill-card">
             <h3 class="skill-category">Data Engineering</h3>
-            <p class="skill-list"><strong>Expert:</strong> Python &bull; SQL &bull; PySpark &bull; Databricks</p>
-            <p class="skill-list"><strong>Familiar:</strong> Snowflake &bull; dbt &bull; Airflow &bull; NiFi &bull;
+            <p class="skill-list"> Python &bull; SQL &bull; PySpark &bull; Databricks</p>
+            <p class="skill-list"> Snowflake &bull; dbt &bull; Airflow &bull; NiFi &bull;
               PostgreSQL</p>
           </article>
 
           <article class="skill-card">
             <h3 class="skill-category">Cloud &amp; Infra</h3>
-            <p class="skill-list"><strong>Expert:</strong> AWS (S3, EC2, Lambda) &bull; Azure (ADF, Storage) &bull;
+            <p class="skill-list"> AWS (S3, EC2, Lambda) &bull; Azure (ADF, Storage) &bull;
               Terraform</p>
-            <p class="skill-list"><strong>Familiar:</strong> Glue &bull; Athena &bull; CloudWatch &bull; Azure
+            <p class="skill-list"> Glue &bull; Athena &bull; CloudWatch &bull; Azure
               Databricks</p>
           </article>
 
           <article class="skill-card">
             <h3 class="skill-category">Governance &amp; Reliability</h3>
-            <p class="skill-list"><strong>Expert:</strong> Data Quality &bull; Lineage &bull; Unity Catalog</p>
-            <p class="skill-list"><strong>Familiar:</strong> RBAC &bull; Audit Logs &bull; Freshness SLAs &bull;
+            <p class="skill-list"> Data Quality &bull; Lineage &bull; Unity Catalog</p>
+            <p class="skill-list"> RBAC &bull; Audit Logs &bull; Freshness SLAs &bull;
               Monitoring</p>
           </article>
 
           <article class="skill-card">
             <h3 class="skill-category">ML / Deep Learning</h3>
-            <p class="skill-list"><strong>Expert:</strong> PyTorch &bull; Transformers &bull; Time-Series ML &bull;
+            <p class="skill-list"> PyTorch &bull; Transformers &bull; Time-Series ML &bull;
               Scikit-learn</p>
-            <p class="skill-list"><strong>Familiar:</strong> NLP &bull; LangChain &bull; Gemini &bull; XGBoost &bull;
+            <p class="skill-list"> NLP &bull; LangChain &bull; Gemini &bull; XGBoost &bull;
               LightGBM</p>
           </article>
 
           <article class="skill-card">
             <h3 class="skill-category">Dev &amp; Ops</h3>
-            <p class="skill-list"><strong>Expert:</strong> Git &bull; Linux &bull; Bash &bull; CI/CD</p>
-            <p class="skill-list"><strong>Familiar:</strong> Docker &bull; IaC &bull; Grafana &bull; GitHub Actions</p>
+            <p class="skill-list"> Git &bull; Linux &bull; Bash &bull; CI/CD</p>
+            <p class="skill-list"> Docker &bull; IaC &bull; Grafana &bull; GitHub Actions</p>
           </article>
 
           <article class="skill-card">
             <h3 class="skill-category">Dashboards</h3>
-            <p class="skill-list"><strong>Expert:</strong> Streamlit &bull; Analytics Reporting</p>
-            <p class="skill-list"><strong>Familiar:</strong> Grafana &bull; Power BI</p>
+            <p class="skill-list"> Streamlit &bull; Analytics Reporting</p>
+            <p class="skill-list"> Grafana &bull; Power BI</p>
           </article>
         </div>
       </div>
