@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Resume source and LaTeX build output (not used by the site)
+Master_Resume_*.tex
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Original photos. The site uses assets/images/portrait.jpg
+assets/images/IMG_6077.JPG
+assets/images/headshot.png

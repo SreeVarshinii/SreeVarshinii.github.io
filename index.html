@@ -1,580 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <title>Sreevarshini Srinivasan | Data Engineer Profile</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sreevarshini Srinivasan, Data and AI Engineer</title>
+  <meta name="description" content="Data and AI engineer building production ETL/ELT pipelines, lakehouse architectures, cloud infrastructure and data quality systems for ML. M.S. Data Science, University of Maryland.">
+  <meta name="author" content="Sreevarshini Srinivasan">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sreevarshini Srinivasan, Data and AI Engineer">
+  <meta property="og:description" content="I architect AI systems and the infrastructure they depend on.">
+  <meta property="og:image" content="https://sreevarshinii.github.io/assets/images/portrait.jpg">
+  <meta property="og:url" content="https://sreevarshinii.github.io/">
+  <meta name="theme-color" content="#f5f1e9">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f5f1e9'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%239a3b1b'%3ESS%3C/text%3E%3C/svg%3E">
 
-  <meta name="description"
-    content="Professional portfolio of Sreevarshini Srinivasan — Data Engineer building robust pipelines and ML infrastructure." />
-  <meta name="keywords"
-    content="Sreevarshini Srinivasan, Data Engineer, ML Engineer, Data Engineering, Deep Learning, MLOps, Lakehouse, Databricks, Azure, AWS" />
-  <meta name="author" content="Sreevarshini Srinivasan" />
+  <script>document.documentElement.classList.add("js");</script>
 
-  <!-- Google Fonts for crisp sans-serif body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,450;6..72,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- Simple Header Bar -->
-  <header class="scholar-header">
-    <div class="header-container">
-      <div class="logo">
-        <a href="#hero" class="logo-link">Sreevarshini Srinivasan</a>
+  <div class="layout">
+    <header class="sidebar">
+      <div class="sidebar-top">
+        <a class="identity" href="#top">
+          <img class="avatar" src="assets/images/avatar.jpg" width="256" height="256" alt="">
+          <span class="identity-text">
+            <span class="identity-name">Sreevarshini Srinivasan</span>
+            <span class="identity-role">Data and AI engineer</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       </div>
-      <nav class="nav" aria-label="Main navigation">
-        <ul class="nav-links">
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#certifications" class="nav-link">Certifications</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
+      <div class="sidebar-panel" id="site-nav">
+        <nav aria-label="Sections">
+          <ul class="section-nav">
+            <li><a href="#experience" data-panel="experience">Experience</a></li>
+            <li><a href="#projects" data-panel="projects">Projects</a></li>
+            <li><a href="#skills" data-panel="skills">Skills</a></li>
+            <li><a href="#education" data-panel="education">Education</a></li>
+          </ul>
+        </nav>
+        <ul class="sidebar-links" aria-label="Profiles">
+          <li><a href="https://github.com/SreeVarshinii" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/sreevarshini-srinivasan-3510081b7" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://substack.com/@sreevarshinii" rel="noopener">Substack</a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main" class="scholar-container">
-
-    <!-- Scholar Profile Header / Hero Card -->
-    <section class="scholar-profile-hero" id="hero" aria-label="Profile Header">
-      <div class="scholar-hero-avatar-wrapper">
-        <img src="assets/images/IMG_6077.JPG" alt="Sreevarshini Srinivasan" class="scholar-hero-avatar" />
+        <p class="sidebar-copy">&copy; <span id="year">2026</span> Sreevarshini Srinivasan</p>
       </div>
-      <div class="scholar-hero-info">
-        <div class="scholar-hero-name-row">
-          <h1 class="scholar-hero-name">Sreevarshini Srinivasan</h1>
-          <div class="scholar-hero-actions">
-            <a href="assets/Sreevarshini_Srinivasan_Resume.pdf" class="scholar-resume-btn" download>Download CV</a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <p class="mono">Data and AI engineer, College Park, MD</p>
+        <h1 id="hero-title">I architect AI systems and the infrastructure they depend on.</h1>
+        <p class="hero-lede">
+          Production data engineering on Databricks, PySpark and Azure for retail MNCs in the Middle East. Built cloud infrastructure on AWS with Terraform from scratch to support multimodal data. Built agentic AI for a research lab. Now working on fine-tuning LLMs and multimodal systems. M.S. in Data Science, University of Maryland (May 2026).
+        </p>
+        <p class="mono">Open to Data Engineer, AI and ML roles.</p>
+      </section>
+
+      <section class="panel" id="experience" aria-labelledby="experience-title">
+        <div class="section-head">
+          <h2 id="experience-title" tabindex="-1">Experience</h2>
+          <p>Cloud infrastructure, retail data platforms and AI engineering, newest first.</p>
+        </div>
+        <ol class="roles">
+          <li class="role">
+            <div class="role-label">
+              <h3>AI Engineer</h3>
+              <p class="role-org">Balanx Bio</p>
+            </div>
+            <div class="role-body">
+              <ul class="bullets">
+                <li>Designed and redesigned agent reasoning architecture, restructuring an LLM emotional-response conditioning system into an independent Vision + Audio multimodal design to resolve conflicting signal inputs and improve model reasoning quality.</li>
+                <li>Built, deployed and debugged the full technical lifecycle: orchestrating production inference pipelines on AWS Glue and S3, and serving the model through an Amazon Bedrock endpoint with guardrails for reliable behavior.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="role">
+            <div class="role-label">
+              <h3>Cloud Infrastructure Engineer, Founding Team</h3>
+              <p class="role-org">DriverAI, LLC</p>
+            </div>
+            <div class="role-body">
+              <ul class="bullets">
+                <li>Set up ingestion for structured and unstructured data by designing, deploying and maintaining AWS (EC2, RDS) and Azure infrastructure built for high availability and scalability.</li>
+                <li>Automated infrastructure provisioning with Terraform, cutting manual deployment overhead by 60% and making environments reproducible.</li>
+                <li>Built FastAPI and PostgreSQL backend services for internal data access, AI infrastructure workflows and reporting.</li>
+                <li>Integrated CloudWatch and Grafana dashboards to track system performance, pipeline health and incident signals, which shortened the time to root-cause production issues.</li>
+                <li>Collaborated on CI/CD pipelines and enforced cloud security practices through IAM policies, secrets management and access control.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="role">
+            <div class="role-label">
+              <h3>Data Engineer</h3>
+              <p class="role-org">Loyalytics AI</p>
+            </div>
+            <div class="role-body">
+              <ul class="bullets">
+                <li>Built and scaled ETL/ELT pipelines in Python, PySpark, Azure Data Factory, Databricks and Delta Live Tables, processing 15GB+ daily across 10+ sources and 100+ tables for major retail chains in the Middle East.</li>
+                <li>Implemented medallion architecture (Bronze, Silver, Gold) with Auto Loader and streaming tables to ingest Oracle databases, XML files from SFTP servers and CSVs from Azure storage incrementally.</li>
+                <li>Processed nested XML across 6+ years of historical records and delivered financial analytics pipelines spanning 7 countries (historical loads plus ongoing batch ingestion), achieving 100% processing accuracy for tax, sales and inventory reporting.</li>
+                <li>Migrated approximately 6TB of legacy Oracle and MySQL data into an Azure-based lakehouse with validation checks and reconciliation workflows.</li>
+                <li>Built automated data validation frameworks, daily screening scripts and data quality dashboards that caught schema drift, null violations and referential errors before they reached customer-facing reports.</li>
+                <li>Reduced storage costs by 70% and source onboarding time by 30%.</li>
+                <li>Served as data point of contact for 3+ concurrent retail clients (Panda, LuLu, Cenomi), resolving data errors with client stakeholders and documenting mismatches and root causes in Notion and SharePoint as an audit trail.</li>
+                <li>Developed the sales and inventory transformation logic behind downstream BI, analytics and ML-ready feature datasets.</li>
+                <li>Led the Unity Catalog migration to improve governance, access control, lineage and discoverability across an enterprise retail data platform.</li>
+                <li>Ran Apache NiFi on Linux VMs for delta ingestion of sensitive financial data, balancing compute cost with security and data residency requirements, and wrote PySpark to test and validate NiFi output.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="role">
+            <div class="role-label">
+              <h3>Graduate Course Assistant</h3>
+              <p class="role-org">College of Information, University of Maryland</p>
+            </div>
+            <div class="role-body">
+              <ul class="bullets">
+                <li>Designed a multi-agent LangGraph workflow with planner, retriever, and tool-calling agents communicating via MCP, autonomously decomposing and executing 50+ multi-step research queries end-to-end.</li>
+                <li>Built an evaluation harness with LangSmith tracing to benchmark task success and hallucination rate, cutting hallucinated responses by 35% and agent latency by 40% through prompt and retrieval tuning.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      
+      </section>
+
+      <section class="panel" id="projects" aria-labelledby="projects-title">
+        <div class="section-head">
+          <h2 id="projects-title" tabindex="-1">Projects</h2>
+          <p>Three flagship data and AI infrastructure builds, then other machine learning and LLM projects.</p>
+        </div>
+        <div>
+          <article class="project" id="ragtrace">
+            <div>
+              <span class="repo-meta" data-repo="RAGTrace" aria-live="polite"><span class="skeleton" aria-hidden="true"></span></span>
+            </div>
+            <div>
+              <h3>RAGTrace AI</h3>
+              <p class="project-sub">Data quality and observability for RAG chatbots</p>
+              <p class="stack">TypeScript, LangGraph.js, PostgreSQL and pgvector, React, Hono</p>
+              <p>Most observability tools inspect query-time behavior. RAGTrace AI traces quality from source ingestion through retrieval and generation, using 4 LangGraph.js agent pipelines in a monorepo of 8 npm workspaces.</p>
+              <ul class="bullets">
+                <li>A root-cause tracing agent walks a low-quality answer back through retrieved chunks to source documents and known ingestion defects, and assigns no blame when no document was at fault.</li>
+                <li>A provider-agnostic LLM layer (Gemini, Groq and a deterministic offline fallback) allows failover with no code changes when a free-tier quota runs out.</li>
+                <li>7 call sites across 5 pipeline stages track token usage, time to first token and inter-token latency. Two REST endpoints report p50, p95 and p99 using Postgres <code>percentile_cont</code>.</li>
+                <li>Every build phase required a runnable verification script, which surfaced and fixed 3 production-blocking bugs: cascading-delete data loss, stale-evidence misattribution and a React key collision.</li>
+                <li>On a 10-question evaluation, 8 of 10 correctly triggered root-cause analysis with zero false attributions, for a total LLM cost of $0.015. The 4-view React and Vite dashboard uses color-vision-deficiency-safe palettes.</li>
+              </ul>
+              <ul class="project-links">
+                <li><a href="https://github.com/SreeVarshinii/RAGTrace" rel="noopener">Source on GitHub</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project" id="feature-store">
+            <div>
+              <span class="repo-meta" data-repo="feature-store-pipeline" aria-live="polite"><span class="skeleton" aria-hidden="true"></span></span>
+            </div>
+            <div>
+              <h3>Feature Store ML Pipeline and Drift Detection</h3>
+              <p class="stack">PySpark, Delta Lake, Feast, Evidently AI, Airflow, Streamlit, scikit-learn</p>
+              <p>An ML infrastructure pipeline with PySpark feature engineering (lag and 3-month rolling aggregates), versioned Delta Lake storage, a Feast feature store with a SQLite online store, and Airflow orchestration.</p>
+              <p>During a simulated economic stress event, Evidently AI (Wasserstein and Jensen-Shannon distances) detected 36.7% drift in <code>annual_income</code> and the pipeline quarantined the drifting cohort. Retraining lifted accuracy from 59.3% to 68.2% and AUC-ROC from 0.535 to 0.748. A Streamlit dashboard shows live Feast feature retrieval and embedded drift reports.</p>
+              <p class="note">These results come from a simulated stress test, not production traffic.</p>
+              <ul class="project-links">
+                <li><a href="https://github.com/SreeVarshinii/feature-store-pipeline" rel="noopener">Source on GitHub</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project" id="schemadrift">
+            <div>
+              <span class="repo-meta" data-repo="DriftDetection" aria-live="polite"><span class="skeleton" aria-hidden="true"></span></span>
+            </div>
+            <div>
+              <h3>SchemaDrift and SchemaGraph</h3>
+              <p class="project-sub">Real-time schema drift detection and lineage</p>
+              <p class="stack">Python, PostgreSQL, Neo4j, Kafka, FastAPI</p>
+              <p>A metadata-driven platform that detects schema drift across Kafka, S3, PostgreSQL, Iceberg, Delta Lake and dbt-style pipelines. Schema versions and downstream dependencies live in a graph, so a mutation can be traced to the Bronze, Silver and Gold tables it would break. Malformed data is rescued into a dynamic PostgreSQL structure instead of being dropped.</p>
+              <p>Validation rules catch schema mutations, null violations and referential problems. Migration SQL is generated by graph traversal, and unsafe schema changes are blocked in a CI-style gate. Interactive lineage and impact views support regression triage and governance.</p>
+              <ul class="project-links">
+                <li><a href="https://github.com/SreeVarshinii/DriftDetection" rel="noopener">Source on GitHub</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <h3 class="subhead">Other projects</h3>
+          <ul class="compact">
+            <li>
+              <div>
+                <h4>IllumiSeg</h4>
+                <p class="stack">PyTorch, U-Net, ResNet34</p>
+              </div>
+              <p>Co-authored a paper on joint illumination enhancement and polyp segmentation for low-light endoscopy, using a U-Net with a Retinex-based feature disentanglement module, radiance-guided attention and an uncertainty head. On Kvasir-SEG (1,000 images) under severe simulated darkness it reached Dice 0.628, against 0.019 for the standard baseline and 0.469 for a dark-trained baseline.</p>
+            </li>
+            <li>
+              <div>
+                <h4><a href="https://github.com/SreeVarshinii/ICU_sepsis_prediction" rel="noopener">ICU Sepsis Prediction</a></h4>
+                <p class="stack">PyTorch, Transformers, Streamlit</p>
+              </div>
+              <p>A DyT Transformer trained on 1.55M ICU time steps for early sepsis prediction from noisy, irregular time series, reaching AUROC 0.90. Handles missing values, temporal gaps and class imbalance, with a Streamlit dashboard for risk signals and evaluation.</p>
+            </li>
+            <li>
+              <div>
+                <h4><a href="https://github.com/SreeVarshinii/BrisT1DBloodGlucosePrediction" rel="noopener">BrisT1D Blood Glucose Prediction</a></h4>
+                <p class="stack">XGBoost, LightGBM</p>
+              </div>
+              <p>Forecasts blood glucose 60 minutes ahead from continuous glucose monitoring, insulin, carbohydrate and activity data. Compared XGBoost and LightGBM on time-window features, reaching about 1.94 RMSE.</p>
+            </li>
+            <li>
+              <div>
+                <h4>FoodLink Sentinel</h4>
+                <p class="stack">Python, FastAPI, SQL, Streamlit</p>
+              </div>
+              <p>Traced a reported 66% data-leakage rate to a validation logic flaw by reproducing request behavior under concurrency. Verified correctness with independent assertion-driven test suites and SQL database-state audits.</p>
+            </li>
+            <li>
+              <div>
+                <h4><a href="https://github.com/SreeVarshinii/TaxFilingChatBot" rel="noopener">TaxFilingChatBot</a></h4>
+                <p class="stack">Python, Docker, RAG</p>
+              </div>
+              <p>A containerized RAG assistant that answers international student tax questions from official IRS documents, grounding each response in source text to reduce hallucination risk. Includes PDF ingestion, chunking, retrieval and generation.</p>
+            </li>
+            <li>
+              <div>
+                <h4><a href="https://github.com/SreeVarshinii/TandC_Summarisation" rel="noopener">TandC Summarisation</a></h4>
+                <p class="stack">Mistral-7B, QLoRA</p>
+              </div>
+              <p>Fine-tuned Mistral-7B with QLoRA to rewrite Terms and Conditions in plain English, with a retrieval, generation, explanation and evaluation pipeline scored on ROUGE and readability metrics.</p>
+            </li>
+          </ul>
+        </div>
+      
+      </section>
+
+      <section class="panel" id="skills" aria-labelledby="skills-title">
+        <div class="section-head">
+          <h2 id="skills-title" tabindex="-1">Skills</h2>
+          <p>Grouped by the work they support.</p>
+        </div>
+        <dl class="skill-list">
+          <div class="skill-row"><dt>Languages</dt><dd>Python, SQL, PySpark, R, TypeScript, Bash</dd></div>
+          <div class="skill-row"><dt>Data platforms and orchestration</dt><dd>Databricks, Delta Live Tables, Delta Lake, Azure Data Factory, Apache NiFi, dbt, Airflow, Snowflake, Kafka, Iceberg, Microsoft Fabric, Unity Catalog</dd></div>
+          <div class="skill-row"><dt>Databases</dt><dd>PostgreSQL, Oracle, MySQL, SQL Server, BigQuery, Redshift, Neo4j, pgvector</dd></div>
+          <div class="skill-row"><dt>Cloud and infrastructure</dt><dd>AWS (EC2, S3, RDS, Lambda, Glue, Athena, CloudWatch, Bedrock), Azure (ADLS, Azure Data Factory), Terraform, Docker, Linux, Git, GitHub Actions, Jenkins, CI/CD, IAM, secrets management</dd></div>
+          <div class="skill-row"><dt>Data quality and governance</dt><dd>Medallion architecture, ETL/ELT pipelines, data modeling, data warehousing, data validation, schema drift detection, data lineage, data observability, root-cause analysis</dd></div>
+          <div class="skill-row"><dt>Machine learning and GenAI</dt><dd>PyTorch, scikit-learn, Transformers, XGBoost, LightGBM, Feast, Evidently AI, time-series modeling, deep learning, NLP, statistical analysis, RAG, QLoRA, LangChain, LangGraph.js, Gemini API, Claude API</dd></div>
+          <div class="skill-row"><dt>Applications and reporting</dt><dd>React, FastAPI, Hono, Streamlit, Grafana, Power BI, Tableau, Pandas, Matplotlib, Excel, Notion, SharePoint</dd></div>
+          <div class="skill-row"><dt>AI-assisted development</dt><dd>Claude, ChatGPT, Copilot, Cursor</dd></div>
+        </dl>
+      
+      </section>
+
+      <section class="panel" id="education" aria-labelledby="education-title">
+        <div class="section-head">
+          <h2 id="education-title" tabindex="-1">Education and certifications</h2>
+        </div>
+        <div class="pair">
+          <div>
+            <h3>Education</h3>
+            <ul class="entries">
+              <li class="entry">
+                <strong>M.S. Data Science, University of Maryland, College Park</strong>
+                <span class="mono">Aug 2024 to May 2026</span>
+                <p>Statistical Pattern Recognition, Supervised and Unsupervised Learning, Probability Theory, Algorithms, Deep Learning.</p>
+              </li>
+              <li class="entry">
+                <strong>B.E. Electrical and Electronics Engineering, Rajalakshmi Engineering College</strong>
+                <span class="mono">2018 to 2022</span>
+                <p>Programming, data systems, mathematics and engineering fundamentals.</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Certifications</h3>
+            <ul class="entries">
+              <li class="entry"><strong><a href="https://credentials.databricks.com/89b6f8bf-052b-415d-89e4-1ae15c50c889#acc.eP49wm7x" rel="noopener">Databricks Certified Data Engineer Associate</a></strong></li>
+              <li class="entry"><strong><a href="https://learn.microsoft.com/en-us/users/sreevarshinisrinivasan-7614/credentials/5c7203f08c97ad09?ref=https%3A%2F%2Fwww.linkedin.com%2F" rel="noopener">Microsoft Certified: Fabric Data Engineer Associate</a></strong></li>
+              <li class="entry"><strong>Google Data Analytics (GCP)</strong></li>
+              <li class="entry"><strong>Architecting with Google Compute Engine Specialization</strong></li>
+              <li class="entry"><strong>Google Cloud Skill Badge: Cloud Essentials</strong></li>
+              <li class="entry"><strong>AWS ReachBack Cohort</strong><p>AWS Solutions Architect preparation.</p></li>
+            </ul>
           </div>
         </div>
-        <p class="scholar-hero-title">Data and AI Engineer</p>
-        <p class="scholar-hero-affiliation">
-          M.S. in Data Science, University of Maryland &bull;
-          <a href="mailto:varshini.sree03@gmail.com" class="scholar-accent-link">varshini.sree03@gmail.com</a>
-        </p>
-
-        <div class="scholar-hero-socials">
-          <a href="https://www.linkedin.com/in/sreevarshini-srinivasan-3510081b7" target="_blank" rel="noopener" aria-label="LinkedIn" class="hero-social-icon">
-            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-1.85 0-2.58 1-3 1.62V9.83h-2.6v8.42h2.6v-4.66c0-1.11.24-2.18 1.6-2.18 1.34 0 1.35 1.25 1.35 2.25v4.66h2.6zm-11-8.42H4.8v8.42h2.7v-8.42zm-1.35-4.14A1.6 1.6 0 1 0 7.7 7.5a1.6 1.6 0 0 0-1.55-1.56z"/></svg>
-          </a>
-          <a href="https://github.com/SreeVarshinii" target="_blank" rel="noopener" aria-label="GitHub" class="hero-social-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12c0-5.523-4.477-10-10-10z"/></svg>
-          </a>
-          <a href="https://substack.com/@sreevarshinii" target="_blank" rel="noopener" aria-label="Substack" class="hero-social-icon">
-            <svg viewBox="0 0 24 24"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11L22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
-          </a>
-          <a href="mailto:varshini.sree03@gmail.com" aria-label="Email" class="hero-social-icon">
-            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          </a>
-        </div>
-
-        <p class="scholar-hero-headline">
-          I build the infrastructure that makes ML and AI systems trustworthy : pipelines, schema/data-quality
-          monitoring, and
-          lakehouse architecture, with hands-on ML experience layered on top.
-        </p>
-
-        <p class="scholar-hero-availability">
-          <strong>Availability:</strong> Open to Data Engineer, AI and ML Roles.
-        </p>
-
-        <div class="scholar-hero-interests">
-          <strong>Focus:</strong>&nbsp;
-          <a href="#skills" class="interest-link">Data Engineering</a>&nbsp;&bull;&nbsp;
-          <a href="#skills" class="interest-link">AI Infrastructure</a>&nbsp;&bull;&nbsp;
-          <a href="#skills" class="interest-link">Lakehouse Architecture</a>&nbsp;&bull;&nbsp;
-          <a href="#skills" class="interest-link">MLOps</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Two-Column Body Layout -->
-    <div class="scholar-body-grid">
-
-      <!-- Left Column: Primary Content -->
-      <div class="scholar-main-col">
-
-        <!-- Experience Section -->
-        <section id="experience" class="scholar-section">
-          <h2 class="section-heading">Professional Experience</h2>
-          <div class="cv-list">
-            
-            <!-- Experience 1 -->
-            <div class="scholar-card" tabindex="0">
-              <div class="card-header">
-                <div class="card-header-left">
-                  <h3 class="card-title">Data Engineer &bull; Loyalytics AI</h3>
-                  <span class="card-meta">April 2023 – July 2024 | Remote</span>
-                </div>
-                <div class="card-toggle-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-                  </svg>
-                </div>
-              </div>
-              <div class="card-details">
-                <p class="cv-summary">Built lakehouse-style data infrastructure for retail analytics at scale, with reliability and governance as defaults.</p>
-                <ul class="cv-desc-list">
-                  <li>Created pipelines in Databricks and set up the whole system with Delta Live Tables — managing 10TB of historical data and batch pipelines updating hourly for 10+ sources and 100+ tables through medallion architecture.</li>
-                  <li>Built an internal tax calculation platform on Azure for LuLu, a retail chain operating across 7 countries — processing 6 years of historical data plus ongoing batch ingestion, with 100% accuracy.</li>
-                  <li>Ran Apache NiFi on a VM rather than managed cloud specifically to cut compute costs and keep sensitive financial data secure.</li>
-                  <li>Implemented complex sales and inventory transformation logic to power downstream analytics and reporting.</li>
-                  <li>Migrated ~6TB data from legacy databases (Oracle, MySQL) into Azure ecosystem and authored complex SQL and Python queries for robust data processing.</li>
-                  <li>Led migration to Unity Catalog, optimizing data management and governance for a massive retail chain in the Middle East.</li>
-                </ul>
-                <div class="cv-tech-tags">
-                  <span class="cv-tag">Azure Data Factory</span>
-                  <span class="cv-tag">Databricks</span>
-                  <span class="cv-tag">Delta Live Tables</span>
-                  <span class="cv-tag">Apache NiFi</span>
-                  <span class="cv-tag">PySpark</span>
-                  <span class="cv-tag">Python</span>
-                  <span class="cv-tag">SQL</span>
-                  <span class="cv-tag">Oracle</span>
-                  <span class="cv-tag">Azure Storage</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Experience 2 -->
-            <div class="scholar-card" tabindex="0">
-              <div class="card-header">
-                <div class="card-header-left">
-                  <h3 class="card-title">Data Engineer Intern &bull; Loyalytics AI</h3>
-                  <span class="card-meta">January 2023 – March 2023 | Hybrid</span>
-                </div>
-                <div class="card-toggle-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-                  </svg>
-                </div>
-              </div>
-              <div class="card-details">
-                <p class="cv-summary">Foundation work in orchestration, transformations, and governance for retail analytics pipelines.</p>
-                <ul class="cv-desc-list">
-                  <li>Built ADF pipelines orchestrating ingestion from diverse sources (Oracle, MySQL, XMLs, CSVs) in Azure Storage.</li>
-                  <li>Authored complex SQL and Python queries for efficient data processing and transformation.</li>
-                  <li>Automated validation processes across large datasets, capturing issues early and ensuring integrity.</li>
-                  <li>Led foundational migration efforts to Unity Catalog to improve governance and data discoverability.</li>
-                  <li>Improved data flow efficiency by 40% via incremental load strategies and tuning, contributing to streamlined operations.</li>
-                </ul>
-                <div class="cv-tech-tags">
-                  <span class="cv-tag">Azure Data Factory</span>
-                  <span class="cv-tag">SQL</span>
-                  <span class="cv-tag">Python</span>
-                  <span class="cv-tag">Oracle</span>
-                  <span class="cv-tag">MySQL</span>
-                  <span class="cv-tag">Unity Catalog</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Experience 3 -->
-            <div class="scholar-card" tabindex="0">
-              <div class="card-header">
-                <div class="card-header-left">
-                  <h3 class="card-title">Cloud Infrastructure Engineer (Founding Team) &bull; DriverAI, LLC</h3>
-                  <span class="card-meta">June 2025 – August 2025 | Peoria, AZ</span>
-                </div>
-                <div class="card-toggle-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-                  </svg>
-                </div>
-              </div>
-              <div class="card-details">
-                <p class="cv-summary">Built automation-first cloud infrastructure with monitoring, security best practices, and reproducible deployments.</p>
-                <ul class="cv-desc-list">
-                  <li>Founding engineer responsible for setting up end-to-end ingestion for structured and unstructured data.</li>
-                  <li>Deployed AWS (RDS, EC2) and Azure infrastructure ensuring high availability and scalable patterns.</li>
-                  <li>Automated resource provisioning with Terraform, enhancing operational efficiency and cutting manual overhead by 60%.</li>
-                  <li>Integrated monitoring via CloudWatch and Grafana to track system performance and resolve incidents early.</li>
-                  <li>Collaborated on CI/CD pipelines and enforced cloud security best practices through IAM and secrets management.</li>
-                </ul>
-                <div class="cv-tech-tags">
-                  <span class="cv-tag">AWS</span>
-                  <span class="cv-tag">Azure</span>
-                  <span class="cv-tag">Terraform</span>
-                  <span class="cv-tag">Grafana</span>
-                  <span class="cv-tag">CloudWatch</span>
-                  <span class="cv-tag">CI/CD</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Experience 4 -->
-            <div class="scholar-card" tabindex="0">
-              <div class="card-header">
-                <div class="card-header-left">
-                  <h3 class="card-title">Lab Ambassador &bull; Tinkerspace UMD</h3>
-                  <span class="card-meta">Present | College Park, MD</span>
-                </div>
-                <div class="card-toggle-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-                  </svg>
-                </div>
-              </div>
-              <div class="card-details">
-                <p class="cv-summary">Supporting a collaborative robotics lab by helping users move from ideas &rarr; safe, repeatable workflows.</p>
-                <ul class="cv-desc-list">
-                  <li>Support students, faculty, and staff using lab tools and equipment in a hands-on environment.</li>
-                  <li>Translate technical steps into clear workflows and documentation for different skill levels.</li>
-                  <li>Guide users through safe, repeatable processes that reduce friction and errors.</li>
-                  <li>Help maintain shared standards for organization, tooling, and usage procedures.</li>
-                </ul>
-                <div class="cv-tech-tags">
-                  <span class="cv-tag">Robotics</span>
-                  <span class="cv-tag">Technical Support</span>
-                  <span class="cv-tag">Documentation</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- Projects / Publications Section -->
-        <section id="projects" class="scholar-section">
-          <h2 class="section-heading">Selected Projects</h2>
-          <div class="publications-table">
-
-            <!-- Project 1 -->
-            <div class="scholar-card" tabindex="0">
-              <div class="card-header">
-                <div class="card-header-left">
-                  <h3 class="card-title-link">FeatureStore — ML Infrastructure &amp; Drift Detection</h3>
-                  <span class="pub-authors">Feast, PySpark, Delta Lake, Evidently AI, Streamlit, Airflow</span>
-                </div>
-                <div class="card-header-right">
-                  <span class="pub-year">2026</span>
-                  <div class="card-toggle-icon">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="card-details">
-                <div class="pub-project-details">
-                  <p class="pub-description"><strong>Problem:</strong> ML models in production degrade silently due to
-                    feature drift without automatic isolation or self-healing pipelines.</p>
-                  <p class="pub-description"><strong>Build:</strong> Integrated Feast Feature Store, Delta Lake, and
-                    PySpark feature processing, creating automated retraining triggers via Evidently AI.</p>
-                  <p class="pub-description"><strong>Result:</strong> Automatically detects 36.7% feature drift in
-                    production data, quarantining drift and improving model accuracy by +8.9% (+0.21 AUC recovery) via
-                    retraining loops.</p>
-                </div>
-                <a href="https://github.com/SreeVarshinii/feature-store-pipeline" target="_blank" rel="noopener"
-                  class="pub-action-btn">
-                  View on GitHub &rarr;
-                </a>
-              </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="scholar-card" tabindex="0">
-              <div class="card-header">
-                <div class="card-header-left">
-                  <h3 class="card-title-link">SchemaDrift — Resilient Data Pipeline &amp; Monitoring</h3>
-                  <span class="pub-authors">Python, PostgreSQL, Watchdog, JSON Schema, Pandas</span>
-                </div>
-                <div class="card-header-right">
-                  <span class="pub-year">2025</span>
-                  <div class="card-toggle-icon">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="card-details">
-                <div class="pub-project-details">
-                  <p class="pub-description"><strong>Problem:</strong> Upstream schema changes silently break downstream
-                    data pipelines, causing silent failures and complex data corruption.</p>
-                  <p class="pub-description"><strong>Build:</strong> Designed an event-driven monitoring system using
-                    Python Watchdog and JSON Schema validation to capture mutations in real time across
-                    Bronze/Silver/Gold layers.</p>
-                  <p class="pub-description"><strong>Result:</strong> Visualizes downstream lineage blast radius in real
-                    time and automatically quarantines invalid mutations, cutting incident triage and recovery times.
-                  </p>
-                </div>
-                <a href="https://github.com/SreeVarshinii/DriftDetection" target="_blank" rel="noopener"
-                  class="pub-action-btn">
-                  View on GitHub &rarr;
-                </a>
-              </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="scholar-card" tabindex="0">
-              <div class="card-header">
-                <div class="card-header-left">
-                  <h3 class="card-title-link">TaxFilingChatBot — AI Assistant for F-1 Scholars</h3>
-                  <span class="pub-authors">Python, LangChain, LLM, Docker, RAG, PDF Processing</span>
-                </div>
-                <div class="card-header-right">
-                  <span class="pub-year">2025</span>
-                  <div class="card-toggle-icon">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="card-details">
-                <div class="pub-project-details">
-                  <p class="pub-description"><strong>Problem:</strong> International students struggle to navigate
-                    complex tax regulations, and standard LLM assistants hallucinate legal advice.</p>
-                  <p class="pub-description"><strong>Build:</strong> Containerized a RAG-based AI assistant using
-                    LangChain and Docker, grounding responses strictly in official 2025 IRS tax documents.</p>
-                  <p class="pub-description"><strong>Result:</strong> Delivered zero-hallucination tax guidance with
-                    100% verification against official IRS sources.</p>
-                </div>
-                <a href="https://github.com/SreeVarshinii/TaxFilingChatBot" target="_blank" rel="noopener"
-                  class="pub-action-btn">
-                  View on GitHub &rarr;
-                </a>
-              </div>
-            </div>
-
-            <!-- Collapsible Secondary Projects List -->
-            <details class="more-projects-wrapper">
-              <summary class="more-projects-trigger">More Projects (Click to expand)</summary>
-              <div class="more-projects-content">
-
-                <!-- Project 4 (Secondary) -->
-                <div class="scholar-card" tabindex="0">
-                  <div class="card-header">
-                    <div class="card-header-left">
-                      <h3 class="card-title-link">ICU Sepsis Prediction — Dynamic Tanh Transformer</h3>
-                      <span class="pub-authors">Python, PyTorch, Transformers, Time-Series ML</span>
-                    </div>
-                    <div class="card-header-right">
-                      <span class="pub-year">2024</span>
-                      <div class="card-toggle-icon">
-                        <svg viewBox="0 0 24 24">
-                          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-details">
-                    <div class="pub-project-details">
-                      <p class="pub-description"><strong>Problem:</strong> ICU patient time-series data is highly sparse
-                        and irregular, making early warning signs of sepsis difficult to predict.</p>
-                      <p class="pub-description"><strong>Build:</strong> Built a PyTorch Transformer with Dynamic Tanh
-                        Normalization (DyT) to process irregular ICU time-series intervals.</p>
-                      <p class="pub-description"><strong>Result:</strong> Predicts sepsis risk 24+ hours in advance,
-                        providing clinical warning signs before patient degradation.</p>
-                    </div>
-                    <a href="https://github.com/SreeVarshinii/ICU_sepsis_prediction" target="_blank" rel="noopener"
-                      class="pub-action-btn">
-                      View on GitHub &rarr;
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Project 5 (Secondary) -->
-                <div class="scholar-card" tabindex="0">
-                  <div class="card-header">
-                    <div class="card-header-left">
-                      <h3 class="card-title-link">Type 1 Diabetes Blood Glucose Forecasting</h3>
-                      <span class="pub-authors">Python, XGBoost, LightGBM, Scikit-learn, Feature Engineering</span>
-                    </div>
-                    <div class="card-header-right">
-                      <span class="pub-year">2024</span>
-                      <div class="card-toggle-icon">
-                        <svg viewBox="0 0 24 24">
-                          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-details">
-                    <div class="pub-project-details">
-                      <p class="pub-description"><strong>Problem:</strong> Type 1 diabetes patients need predictive
-                        forecasting to prevent hypoglycemia, but personal CGM data is highly noisy.</p>
-                      <p class="pub-description"><strong>Build:</strong> Developed an ensemble regression model
-                        (XGBoost/LightGBM) with custom time-series lag feature engineering.</p>
-                      <p class="pub-description"><strong>Result:</strong> Delivers a 60-minute prediction window for
-                        blood glucose forecasting, facilitating early intervention.</p>
-                    </div>
-                    <a href="https://github.com/SreeVarshinii/BrisT1DBloodGlucosePrediction" target="_blank"
-                      rel="noopener" class="pub-action-btn">
-                      View on GitHub &rarr;
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Project 6 (Secondary) -->
-                <div class="scholar-card" tabindex="0">
-                  <div class="card-header">
-                    <div class="card-header-left">
-                      <h3 class="card-title-link">Terms &amp; Conditions Summarization with QLoRA</h3>
-                      <span class="pub-authors">Python, Mistral-7B, QLoRA, NLP, Transformers</span>
-                    </div>
-                    <div class="card-header-right">
-                      <span class="pub-year">2024</span>
-                      <div class="card-toggle-icon">
-                        <svg viewBox="0 0 24 24">
-                          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-details">
-                    <div class="pub-project-details">
-                      <p class="pub-description"><strong>Problem:</strong> Terms &amp; Conditions agreements are written
-                        in opaque legal jargon that users accept without reading.</p>
-                      <p class="pub-description"><strong>Build:</strong> Fine-tuned Mistral-7B using QLoRA with Hugging
-                        Face PEFT on consumer contracts.</p>
-                      <p class="pub-description"><strong>Result:</strong> Condenses legal documents into plain English
-                        summaries, verified by ROUGE score evaluations.</p>
-                    </div>
-                    <a href="https://github.com/SreeVarshinii/TandC_Summarisation" target="_blank" rel="noopener"
-                      class="pub-action-btn">
-                      View on GitHub &rarr;
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-            </details>
-
-          </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="scholar-section">
-          <h2 class="section-heading">Skills &amp; Technologies</h2>
-          <div class="scholar-skills-container">
-            <div class="skill-category-row">
-              <span class="skill-cat-title">Languages &amp; Core:</span>
-              <span class="skill-cat-items">Python, SQL, Java, Bash, Data Structures &amp; Algorithms, Distributed Systems, Git, JIRA</span>
-            </div>
-            <div class="skill-category-row">
-              <span class="skill-cat-title">Data Engineering:</span>
-              <span class="skill-cat-items">PySpark, Databricks, Delta Lake, Snowflake, dbt, Apache Airflow, Kafka, Apache NiFi, PostgreSQL, pgvector, Oracle, MySQL, Unity Catalog, Azure ADLS</span>
-            </div>
-            <div class="skill-category-row">
-              <span class="skill-cat-title">Cloud, DevOps &amp; Observability:</span>
-              <span class="skill-cat-items">AWS (S3, EC2, CloudWatch), Azure (ADF, Databricks), GCP (Vertex AI, Cloud Run, Pub/Sub, Firestore, BigQuery), Terraform, Docker, CI/CD, GitHub Actions, IAM, Secrets Management, Prometheus, Grafana, REST APIs, FastAPI</span>
-            </div>
-            <div class="skill-category-row">
-              <span class="skill-cat-title">ML, AI &amp; MLOps:</span>
-              <span class="skill-cat-items">PyTorch, Scikit-learn, LangChain, LangGraph, LLMs, RAG, RAGAS, MLOps, ML Pipelines, Data Drift Detection, Observability, SLO Design, Anomaly Detection, Streamlit</span>
-            </div>
-          </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="scholar-section">
-          <h2 class="section-heading">Education</h2>
-          <div class="cv-list">
-            <div class="scholar-card" tabindex="0">
-              <div class="card-header">
-                <div class="card-header-left">
-                  <h3 class="card-title">M.S. in Data Science &bull; University of Maryland, College Park</h3>
-                  <span class="card-meta">2024 – 2026 | College Park, MD</span>
-                </div>
-                <div class="card-toggle-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-                  </svg>
-                </div>
-              </div>
-              <div class="card-details">
-                <p class="cv-desc">
-                  Coursework across machine learning, deep learning, NLP, and large-scale data systems, with a focus on
-                  building reliable ML-ready data pipelines.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" class="scholar-section">
-          <h2 class="section-heading">Professional Certifications</h2>
-          <div class="cv-list">
-
-            <div class="scholar-card no-collapse">
-              <div class="card-header">
-                <div class="card-header-left">
-                  <h3 class="card-title">
-                    <a href="https://credentials.databricks.com/89b6f8bf-052b-415d-89e4-1ae15c50c889#acc.eP49wm7x" target="_blank" rel="noopener" class="card-title-link">
-                      Databricks Certified Data Engineer Associate
-                    </a>
-                  </h3>
-                  <span class="card-meta">Databricks &bull; Verified Credential</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="scholar-card no-collapse">
-              <div class="card-header">
-                <div class="card-header-left">
-                  <h3 class="card-title">
-                    <a href="https://learn.microsoft.com/en-us/users/sreevarshinisrinivasan-7614/credentials/5c7203f08c97ad09?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener" class="card-title-link">
-                      Microsoft Certified: Fabric Data Engineer Associate
-                    </a>
-                  </h3>
-                  <span class="card-meta">Microsoft &bull; Verified Credential</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="scholar-section">
-          <h2 class="section-heading">About Me</h2>
-          <div class="scholar-about-text">
-            <p>
-              Hi, I'm Sreevarshini. I build the infrastructure that data and AI systems run on.
-            </p>
-            <p>
-              I started out moving terabytes of retail data across the Middle East for Loyalytics AI: untangling years of nested XML data, keeping medallion pipelines running on Delta Live Tables, making sure nothing silently broke when a schema changed upstream. That's where I learned that most "AI problems" are actually data problems wearing a costume. A model can only be as good as the pipeline feeding it.
-            </p>
-            <p>
-              From there I moved into cloud infrastructure at DriverAI, provisioning AWS and Azure environments with Terraform and wiring up the monitoring to know when something's about to go wrong before it does. I like that side of the work that makes everything else possible.
-            </p>
-            <p>
-              Now I'm finishing my master's in Data Science at Maryland, which has pulled me back toward the algorithmic side: transformers, time-series models, the kind of problems where the data is messy and irregular and the stakes are real.
-            </p>
-            <p>
-              What ties it together is a stubborn interest in reliability. I'd rather build something boring and correct than clever and fragile. Systems that catch their own mistakes, pipelines that tell you when they're lying to you, models that know when to say "I'm not sure" — that's the stuff I actually enjoy building.
-            </p>
-            <p>
-              Outside of work, I'm the person people at the Tinkerspace lab come to when the Arduino Cloud times out for no reason. I am also exploring ML on physical devices on the side in the lab.
-            </p>
-          </div>
-        </section>
-
-      </div>
-
-    </div>
-
-  </main>
-
-  <footer class="scholar-footer">
-    <div class="footer-container">
-      <p>&copy; <span id="year"></span> Sreevarshini Srinivasan. Minimalist Portfolio engineered in Scholar theme.</p>
-    </div>
-  </footer>
+      
+      </section>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
-
 </html>
