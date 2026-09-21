@@ -1,70 +1,134 @@
-// script.js
-// Simplified academic navigation and footer automation
+(function () {
+  "use strict";
 
-document.addEventListener('DOMContentLoaded', () => {
-  /* -------------------------------------------
-     1. Dynamic Footer Year
-  ------------------------------------------- */
-  const yearSpan = document.getElementById('year');
-  if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
+  var GITHUB_USER = "SreeVarshinii";
+
+  /* Footer year */
+  var yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+  /* Mobile menu */
+  var toggle = document.querySelector(".nav-toggle");
+  var menu = document.getElementById("site-nav");
+
+  function setMenu(open) {
+    menu.classList.toggle("is-open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.textContent = open ? "Close" : "Menu";
   }
 
-  /* -------------------------------------------
-     2. Smooth Scroll for Anchor Links
-  ------------------------------------------- */
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const targetId = this.getAttribute('href');
-      if (targetId === '#') return;
-      
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        e.preventDefault();
-        
-        // Offset for fixed header navigation
-        const headerOffset = 70;
-        const elementPosition = targetElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-        
-        // Push hash state silently
-        history.pushState(null, '', targetId);
+  if (toggle && menu) {
+    toggle.addEventListener("click", function () {
+      setMenu(toggle.getAttribute("aria-expanded") !== "true");
+    });
+    menu.addEventListener("click", function (event) {
+      if (event.target.closest("a")) setMenu(false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+        setMenu(false);
+        toggle.focus();
       }
     });
-  });
+  }
 
-  /* -------------------------------------------
-     3. Collapsible Scholar Cards Accordions
-  ------------------------------------------- */
-  const cards = document.querySelectorAll('.scholar-card:not(.no-collapse)');
-  cards.forEach(card => {
-    card.addEventListener('click', (e) => {
-      // Do not collapse/expand if clicking an anchor link inside card details
-      if (e.target.closest('a')) return;
+  /* Section toggles: one panel visible at a time, addressable by hash */
+  var panels = Array.prototype.slice.call(document.querySelectorAll(".panel"));
+  var panelLinks = Array.prototype.slice.call(document.querySelectorAll("[data-panel]"));
+  var DEFAULT_PANEL = "experience";
 
-      const isExpanded = card.classList.contains('expanded');
-      
-      // Optional: Collapse other cards in the same list to keep interface compact
-      // const parentList = card.parentElement;
-      // parentList.querySelectorAll('.scholar-card.expanded').forEach(expandedCard => {
-      //   if (expandedCard !== card) expandedCard.classList.remove('expanded');
-      // });
+  function hasPanel(id) {
+    return panels.some(function (panel) { return panel.id === id; });
+  }
 
-      card.classList.toggle('expanded');
+  function showPanel(id) {
+    panels.forEach(function (panel) {
+      panel.classList.toggle("is-active", panel.id === id);
+    });
+    panelLinks.forEach(function (link) {
+      if (link.getAttribute("data-panel") === id) link.setAttribute("aria-current", "page");
+      else link.removeAttribute("aria-current");
+    });
+  }
+
+  function revealPanel(id) {
+    var panel = document.getElementById(id);
+    var narrow = window.matchMedia("(max-width: 59.99rem)").matches;
+    if (narrow) {
+      var barHeight = document.querySelector(".sidebar").offsetHeight;
+      window.scrollTo(0, panel.getBoundingClientRect().top + window.pageYOffset - barHeight - 8);
+    } else {
+      window.scrollTo(0, 0);
+    }
+    var heading = panel.querySelector("h2");
+    if (heading) heading.focus({ preventScroll: true });
+  }
+
+  if (panels.length) {
+    var initial = window.location.hash.slice(1);
+    showPanel(hasPanel(initial) ? initial : DEFAULT_PANEL);
+    if (hasPanel(initial)) {
+      window.addEventListener("load", function () {
+        window.scrollTo({ top: 0, behavior: "instant" });
+      });
+    }
+
+    panelLinks.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        var id = link.getAttribute("data-panel");
+        showPanel(id);
+        history.replaceState(null, "", "#" + id);
+        revealPanel(id);
+      });
     });
 
-    // Support keyboard activation (Enter or Space) for accessibility
-    card.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        // Prevent default page scroll on Spacebar
-        e.preventDefault();
-        card.click();
+    window.addEventListener("hashchange", function () {
+      var id = window.location.hash.slice(1);
+      if (hasPanel(id)) showPanel(id);
+    });
+  }
+
+  /* Repository metadata from the GitHub API, cached per session */
+  function repoText(data) {
+    if (!data.pushed_at) return "";
+    var when = new Date(data.pushed_at).toLocaleDateString("en-US", {
+      month: "short",
+      year: "numeric",
+      timeZone: "UTC"
+    });
+    return "Updated " + when;
+  }
+
+  function fillRepo(node, text) {
+    node.textContent = text;
+  }
+
+  document.querySelectorAll("[data-repo]").forEach(function (node) {
+    var repo = node.getAttribute("data-repo");
+    var key = "gh:" + repo;
+    try {
+      var cached = sessionStorage.getItem(key);
+      if (cached) {
+        fillRepo(node, cached);
+        return;
       }
-    });
+    } catch (e) { /* storage unavailable */ }
+
+    fetch("https://api.github.com/repos/" + GITHUB_USER + "/" + repo, {
+      headers: { Accept: "application/vnd.github+json" }
+    })
+      .then(function (response) {
+        if (!response.ok) throw new Error("GitHub responded " + response.status);
+        return response.json();
+      })
+      .then(function (data) {
+        var text = repoText(data);
+        fillRepo(node, text);
+        try { sessionStorage.setItem(key, text); } catch (e) { /* ignore */ }
+      })
+      .catch(function () {
+        fillRepo(node, "");
+      });
   });
-});
+})();
